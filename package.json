@@ -1,5 +1,5 @@
 {
-  "name": "Quicken Data Extractor",
+  "name": "quicken-data-extractor",
   "version": "0.1.0-a",
   "description": "Extracts user-specified fields from a personal Quicken (Mac) datafile; migrates and normalizes data based on new field names",
   "main": "index.js",
