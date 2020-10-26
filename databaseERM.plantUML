@@ -1,0 +1,20 @@
+@startuml Desired ERM
+skinparam linetype ortho
+
+entity "account" {
+* primaryKey <<generated>>
+--
+* name
+}
+
+entity "position" {
+  * primaryKey <<generated>>
+  --
+  * security
+  * account
+}
+account ||--o{ position
+account ||--o{ transaction
+position ||--|| security
+
+@enduml
