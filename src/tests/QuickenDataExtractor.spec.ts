@@ -1,4 +1,4 @@
-import QuickenDataExtractor, { tables, TablesDataRequest } from '../QuickenDataExtractor';
+import { QuickenDataExtractor, tables, TablesDataRequest } from '../QuickenDataExtractor';
 import { dataRequestFixture } from './fixtures/requestsByTable.fixture';
 
 let extractor: QuickenDataExtractor;
