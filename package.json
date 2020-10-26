@@ -1,6 +1,6 @@
 {
   "name": "quicken-data-extractor",
-  "version": "0.2.0-a",
+  "version": "0.3.0-a",
   "description": "Extracts user-specified fields from a personal Quicken (Mac) datafile; migrates and normalizes data based on new field names",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
