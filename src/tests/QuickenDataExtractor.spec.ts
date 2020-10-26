@@ -1,5 +1,6 @@
 import { QuickenDataExtractor, tables, TablesDataRequest } from '../QuickenDataExtractor';
 import { dataRequestFixture } from './fixtures/requestsByTable.fixture';
+import fs from 'fs';
 
 let extractor: QuickenDataExtractor;
 
@@ -46,6 +47,7 @@ describe('QuickendDataExtractor module', () => {
     // console.log('Results: ', results);
 
     expect(Object.keys(results).length).toEqual(Object.keys(tables).length)
+    console.log(results);
     expect(results).toHaveProperty(testTableName);
     expect(results[testTableName]).toHaveProperty('bySecurity');
     expect(results[testTableName]).toHaveProperty('allSecurities');
@@ -55,4 +57,15 @@ describe('QuickendDataExtractor module', () => {
   it('should gracefully handle errors from database operations', () => {
 
   })
+
+  test("Text ile of output", async () => {
+  const testResults = await extractor.fetchAndMigrateQuickenData();
+
+    const data = JSON.stringify(testResults);
+    try {
+      fs.writeFileSync('./testOutput.txt', data, 'utf8');
+    } catch {
+      throw new Error("Could not write test file");
+    }
+  });
 })
