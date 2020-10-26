@@ -70,11 +70,11 @@ export const tables: TablesDataRequest = {
   },
 };
 
-interface Row {
+export interface Row {
   col: string
 }
 
-type QuickenTableName = 'ZACCOUNT' |
+export type QuickenTableName = 'ZACCOUNT' |
   'ZFINANCIALINSTITUTION' |
   'ZPOSITION' |
   'ZSECURITY' |
@@ -88,13 +88,13 @@ type QuickenTableName = 'ZACCOUNT' |
   'ZFITRANSACTION' |
   'ZTRANSACTION';
 
-type RowFilter = {
+export type RowFilter = {
   name: string;
   expression: string;
   values: Array < string | number | null > ;
 }
 
-interface TableColsMap {
+export interface TableColsMap {
   tableName: QuickenTableName,
     quickenColumnNames: Array < string >,
     migratedColumnNames: Array < string >,
