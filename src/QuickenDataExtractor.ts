@@ -113,7 +113,7 @@ export interface ExtractorResponse {
   }
 }
 
-export default class QuickenDataExtractor {
+export class QuickenDataExtractor {
   dbPathName: string;
   tablesInfo: any;
 
