@@ -4,7 +4,7 @@
   "description": "Extracts user-specified fields from a personal Quicken (Mac) datafile; migrates and normalizes data based on new field names",
   "main": "index.js",
   "scripts": {
-    "build": "yarn clean:build && babel src --ignore src/**/*spec* --out-dir lib --extensions '.ts,.tsx'",
+    "build": "yarn clean:build && babel src --ignore src/**/tests/** --out-dir lib --extensions '.ts,.tsx'",
     "clean:build": "rm -rf lib",
     "test-coverage": "jest --coverage",
     "type-check": "tsc",
