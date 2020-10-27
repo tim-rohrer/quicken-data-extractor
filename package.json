@@ -38,6 +38,7 @@
     "@babel/preset-env": "^7.10.4",
     "@babel/preset-typescript": "^7.10.4",
     "@tsconfig/node12": "^1.0.7",
+    "@types/cors": "^2.8.8",
     "@types/express": "^4.17.6",
     "@types/jest": "^26.0.3",
     "@types/pluralize": "^0.0.29",
@@ -52,6 +53,9 @@
     "typescript": "^3.9.6"
   },
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
     "pluralize": "^8.0.0",
     "sqlite": "^4.0.15",
     "sqlite3": "^5.0.0"
