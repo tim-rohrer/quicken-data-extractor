@@ -1,1 +1,1 @@
-export * from './QuickenDataExtractor';
+export {};
