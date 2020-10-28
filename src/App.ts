@@ -1,7 +1,10 @@
-import express from 'express';
-import cors from 'cors';
+import express from "express";
+import cors from "cors";
 // eslint-disable-next-line no-unused-vars
-import { ExtractorResponse } from './QuickenDataExtractor';
+import {
+  ExtractorResponse,
+  QuickenDataExtractor,
+} from "./QuickenDataExtractor";
 
 interface AppResults {
   responseTimestamp: string;
@@ -14,9 +17,9 @@ class App {
   private storedRoutes: any = {};
 
   private allowedOrigins = [
-    'http://localhost:3000',
-    'http://localhost:5000',
-    'http://dev2.itstechnical.net:3000',
+    "http://localhost:3000",
+    "http://localhost:5000",
+    "http://dev2.itstechnical.net:3000",
   ];
 
   constructor() {
@@ -26,15 +29,11 @@ class App {
 
   private mountRoutes(): void {
     const router = express.Router();
-    router.post('/fetch', (req, res, next) => {
+    router.post("/fetch", (req, res, next) => {
       try {
         const { apiKey } = req.body;
-        if (apiKey !== 'a12345') {
-
+        if (apiKey !== "a12345") {
         }
-        const stopSolver = new StopSolver(myRoutes);
-        const suggestedStops = stopSolver.provideStopSolverResults(userParameters);
-
         const appResults: AppResults = {
           stopSolverRoutesID: routesID,
           stopSolverStops: suggestedStops,
@@ -59,11 +58,12 @@ class App {
     //   },
     //   exposedHeaders: ['Content-Length', 'X-Foo', 'X-Bar'],
     // }));
-    this.express.use(express.json({ limit: '50mb' }));
-    this.express.use('/api', router);
+    this.express.use(express.json({ limit: "50mb" }));
+    this.express.use("/api", router);
     this.express.use((error: Error, req: any, res: any, next: any) => {
-      console.log('Server error: ', error);
-      res.status(500)
+      console.log("Server error: ", error);
+      res
+        .status(500)
         .send(`An unexpected server error occurred: ${error.message}`);
     });
   }

@@ -12,7 +12,8 @@
     "test-coverage": "jest --coverage",
     "type-check": "tsc",
     "test": "jest --watch",
-    "linter": "eslint src --ext ts --fix"
+    "linter": "eslint src --ext ts --fix",
+    "eslint:check": "eslint --print-config src/index.ts | eslint-config-prettier-check"
   },
   "repository": {
     "type": "git",
@@ -47,9 +48,11 @@
     "babel-jest": "^26.1.0",
     "babel-loader": "^8.1.0",
     "eslint": "^7.4.0",
-    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
     "jest": "^26.1.0",
+    "prettier": "^2.1.2",
     "supertest": "^5.0.0",
     "typescript": "^3.9.6"
   },
