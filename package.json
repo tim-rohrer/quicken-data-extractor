@@ -2,17 +2,18 @@
   "name": "quicken-data-extractor",
   "version": "0.3.0-a",
   "description": "Extracts user-specified fields from a personal Quicken (Mac) datafile; migrates and normalizes data based on new field names",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "bin/index.js",
+  "types": "bin/index.d.ts",
   "scripts": {
     "build": "yarn build:clean && yarn build:types && yarn build:js",
-    "build:clean": "rm -rf lib",
+    "build:clean": "rm -rf bin",
     "build:types": "tsc",
-    "build:js": "babel src --ignore src/**/tests/** --out-dir lib --extensions '.ts,.tsx'",
+    "build:js": "babel src --ignore src/**/tests/** --out-dir bin --extensions '.ts,.tsx'",
     "test-coverage": "jest --coverage",
     "type-check": "tsc",
     "test": "jest --watch",
-    "linter": "eslint src --ext ts --fix"
+    "linter": "eslint src --ext ts --fix",
+    "eslint:check": "eslint --print-config src/index.ts | eslint-config-prettier-check"
   },
   "repository": {
     "type": "git",
@@ -38,6 +39,7 @@
     "@babel/preset-env": "^7.10.4",
     "@babel/preset-typescript": "^7.10.4",
     "@tsconfig/node12": "^1.0.7",
+    "@types/cors": "^2.8.8",
     "@types/express": "^4.17.6",
     "@types/jest": "^26.0.3",
     "@types/pluralize": "^0.0.29",
@@ -46,12 +48,18 @@
     "babel-jest": "^26.1.0",
     "babel-loader": "^8.1.0",
     "eslint": "^7.4.0",
-    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
     "jest": "^26.1.0",
+    "prettier": "^2.1.2",
+    "supertest": "^5.0.0",
     "typescript": "^3.9.6"
   },
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
     "pluralize": "^8.0.0",
     "sqlite": "^4.0.15",
     "sqlite3": "^5.0.0"
