@@ -1,10 +1,10 @@
 /// <reference types="./vendor-typings/sqlite3" />
-import sqlite3 from 'sqlite3';
+import sqlite3 from "sqlite3";
 export declare const tables: TablesDataRequest;
 export interface Row {
     col: string;
 }
-export declare type QuickenTableName = 'ZACCOUNT' | 'ZFINANCIALINSTITUTION' | 'ZPOSITION' | 'ZSECURITY' | 'ZSECURITYQUOTE' | 'ZSECURITYQUOTEDETAIL' | 'ZLOT' | 'ZLOTMOD' | 'ZLOTASSIGNMENT' | 'ZPOSITION' | 'ZFIPOSITION' | 'ZFITRANSACTION' | 'ZTRANSACTION';
+export declare type QuickenTableName = "ZACCOUNT" | "ZFINANCIALINSTITUTION" | "ZPOSITION" | "ZSECURITY" | "ZSECURITYQUOTE" | "ZSECURITYQUOTEDETAIL" | "ZLOT" | "ZLOTMOD" | "ZLOTASSIGNMENT" | "ZPOSITION" | "ZFIPOSITION" | "ZFITRANSACTION" | "ZTRANSACTION";
 export declare type RowFilter = {
     name: string;
     expression: string;
@@ -22,12 +22,12 @@ export declare type TablesDataRequest = {
 };
 export interface ExtractorResponse {
     [table: string]: {
-        [key: string]: Record<any, any>;
+        [key: string]: Record<string, any>;
     };
 }
 export declare class QuickenDataExtractor {
     dbPathName: string;
-    tablesInfo: any;
+    tablesInfo: TablesDataRequest;
     constructor(dbPathName: string);
     openDatabase: () => Promise<import("sqlite").Database<sqlite3.Database, sqlite3.Statement>>;
     private prepareWhereElement;
@@ -36,7 +36,7 @@ export declare class QuickenDataExtractor {
     private fetchRequestedData;
     private migrateColumnNamesForTable;
     tddMigrateColumnNamesForTable: (tableName: QuickenTableName, row: Record<any, any>) => {
-        [x: string]: any;
+        [x: string]: string | number;
     };
     private migrateAndNormalizeTable;
     private migrateData;
