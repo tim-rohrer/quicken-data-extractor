@@ -50,6 +50,7 @@
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.0",
     "jest": "^26.1.0",
+    "supertest": "^5.0.0",
     "typescript": "^3.9.6"
   },
   "dependencies": {
