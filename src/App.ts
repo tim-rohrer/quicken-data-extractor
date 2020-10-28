@@ -1,9 +1,11 @@
 import express from 'express';
 import cors from 'cors';
+// eslint-disable-next-line no-unused-vars
+import { ExtractorResponse } from './QuickenDataExtractor';
 
 interface AppResults {
-  stopSolverRoutesID: string,
-  stopSolverStops: StopSolverResults,
+  responseTimestamp: string;
+  quickenData: ExtractorResponse;
 }
 
 class App {
@@ -26,16 +28,9 @@ class App {
     const router = express.Router();
     router.post('/fetch', (req, res, next) => {
       try {
-        const { routesID, userParameters, directionsResults } = req.body;
-        let myRoutes: TripRoutesInfoResult = this.storedRoutes[routesID];
-        if (myRoutes === undefined) {
-          const directionsResultsObject = JSON.parse(directionsResults);
-          const tripRouteParser = new TripRoutesInfo(directionsResultsObject);
-          myRoutes = tripRouteParser.parseGoogleRoutes();
-          this.storedRoutes = {
-            ...this.storedRoutes,
-            [routesID]: myRoutes,
-          };
+        const { apiKey } = req.body;
+        if (apiKey !== 'a12345') {
+
         }
         const stopSolver = new StopSolver(myRoutes);
         const suggestedStops = stopSolver.provideStopSolverResults(userParameters);
