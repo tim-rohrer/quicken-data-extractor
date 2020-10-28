@@ -10,7 +10,7 @@ describe('App module', function() {
 
   it('should return success response with extracted Quicken data', async () => {
     const reqPacket = {
-      apiKey: 12345
+      apiKey: "a12345"
     };
     
     const res = await request(app)
@@ -19,15 +19,13 @@ describe('App module', function() {
     .set('Accept', 'application/json');
 
     expect(res.status).toBe(200);
-    expect(res.body).toHaveProperty('ZACCOUNT');
+    expect(res.body.quickenData).toHaveProperty("ZACCOUNT");
   });
   it('should gracefully handle a request with the incorrect key', async () => {
     const res = await request(app)
     .post('/api/fetch')
     .send({
-      parameters: {
-        kilometersPerDay: 0
-      }
+      apiKey: "invalid"
     })
     .set('Accept', 'application/json');
     expect(res.status).toBe(500);
