@@ -1,7 +1,7 @@
 {
   "name": "quicken-data-extractor",
   "version": "0.3.0-a",
-  "description": "Extracts user-specified fields from a personal Quicken (Mac) datafile; migrates and normalizes data based on new field names",
+  "description": "Extracts user-specified fields from a personal Quicken (Mac) data file; migrates and normalizes data based on new field names",
   "main": "bin/index.js",
   "types": "bin/index.d.ts",
   "scripts": {
