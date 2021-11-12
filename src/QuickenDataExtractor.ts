@@ -1,6 +1,6 @@
-import sqlite3 from "sqlite3";
-import { open } from "sqlite";
-import pluralize from "pluralize";
+import sqlite3 = require("sqlite3")
+import { open } from "sqlite"
+import pluralize = require("pluralize")
 
 export const tables: TablesDataRequest = {
   ZACCOUNT: {
@@ -190,10 +190,10 @@ export const tables: TablesDataRequest = {
     ],
     newKey: "security",
   },
-};
+}
 
 export interface Row {
-  col: string;
+  col: string
 }
 
 export type QuickenTableName =
@@ -209,40 +209,40 @@ export type QuickenTableName =
   | "ZPOSITION"
   | "ZFIPOSITION"
   | "ZFITRANSACTION"
-  | "ZTRANSACTION";
+  | "ZTRANSACTION"
 
 export type RowFilter = {
-  name: string;
-  expression: string;
-  values: Array<string | number | null>;
-};
+  name: string
+  expression: string
+  values: Array<string | number | null>
+}
 
 export interface TableColsMap {
-  tableName: QuickenTableName;
-  quickenColumnNames: Array<string>;
-  migratedColumnNames: Array<string>;
-  filters?: Array<RowFilter>;
-  newKey: string;
+  tableName: QuickenTableName
+  quickenColumnNames: Array<string>
+  migratedColumnNames: Array<string>
+  filters?: Array<RowFilter>
+  newKey: string
 }
 
 export type TablesDataRequest = {
-  [x: string]: TableColsMap;
-};
+  [x: string]: TableColsMap
+}
 
 export interface ExtractorResponse {
   [table: string]: {
-    [key: string]: Record<string, any>;
+    [key: string]: Record<string, any>
     // [z: string]: Array<string>,
-  };
+  }
 }
 
 export class QuickenDataExtractor {
-  dbPathName: string;
-  tablesInfo: TablesDataRequest;
+  dbPathName: string
+  tablesInfo: TablesDataRequest
 
   constructor(dbPathName: string) {
-    this.dbPathName = dbPathName;
-    this.tablesInfo = tables;
+    this.dbPathName = dbPathName
+    this.tablesInfo = tables
   }
 
   public openDatabase = async () => {
@@ -250,149 +250,145 @@ export class QuickenDataExtractor {
       return await open({
         filename: this.dbPathName,
         driver: sqlite3.Database,
-      });
+      })
     } catch (err) {
-      throw new Error("Error opening database");
+      throw new Error("Error opening database")
     }
-  };
+  }
 
   private prepareWhereElement = (
     name: string,
     expression: string,
-    values: Array<string | number | null>
+    values: Array<string | number | null>,
   ) => {
-    let elementString = "";
+    let elementString = ""
     values.forEach((value) => {
       if (elementString !== "") {
-        elementString += " OR ";
+        elementString += " OR "
       }
       if (typeof value === "string") {
-        elementString += `${name} ${expression} '${value}'`;
-      } else elementString += `${name} ${expression} ${value}`;
-    });
-    return elementString;
-  };
+        elementString += `${name} ${expression} '${value}'`
+      } else elementString += `${name} ${expression} ${value}`
+    })
+    return elementString
+  }
 
   private prepareWhereString = (filters: Array<RowFilter>) => {
-    let whereString = "";
+    let whereString = ""
     filters.forEach(({ name, expression, values }) => {
       if (whereString !== "") {
-        whereString += " AND ";
+        whereString += " AND "
       }
-      whereString += ` (${this.prepareWhereElement(
-        name,
-        expression,
-        values
-      )}) `;
-    });
-    return whereString;
-  };
+      whereString += ` (${this.prepareWhereElement(name, expression, values)}) `
+    })
+    return whereString
+  }
 
   private fetchTableData = async (
     colsString: string,
     tableName: QuickenTableName,
-    whereString: string
+    whereString: string,
   ) => {
     try {
-      const myDB = await this.openDatabase();
+      const myDB = await this.openDatabase()
       const tableResult = await myDB.all<Row[]>(
-        `SELECT ${colsString} FROM ${tableName} ${whereString}`
-      );
-      await myDB.close();
-      return tableResult;
+        `SELECT ${colsString} FROM ${tableName} ${whereString}`,
+      )
+      await myDB.close()
+      return tableResult
     } catch (err) {
-      throw new Error("Unable to fetch table data");
+      throw new Error("Unable to fetch table data")
     }
-  };
+  }
 
   private fetchRequestedData = async (request: TablesDataRequest) => {
-    let results = {};
+    let results = {}
     await Promise.all(
       Object.values(request).map(
         async ({ tableName, quickenColumnNames, filters }) => {
           const colsString =
             quickenColumnNames[0] === "ALL"
               ? "*"
-              : quickenColumnNames.toString();
-          let filtersString = "";
+              : quickenColumnNames.toString()
+          let filtersString = ""
           if (filters !== undefined && filters.length > 0) {
-            filtersString = `WHERE ${this.prepareWhereString(filters)}`;
+            filtersString = `WHERE ${this.prepareWhereString(filters)}`
           }
           const tableResults = await this.fetchTableData(
             colsString,
             tableName,
-            filtersString
-          );
+            filtersString,
+          )
           results = {
             ...results,
             [tableName]: tableResults,
-          };
-        }
-      )
-    );
-    return results;
-  };
+          }
+        },
+      ),
+    )
+    return results
+  }
 
   private migrateColumnNamesForTable = (
     tableName: QuickenTableName,
-    row: Record<string, string | number>
+    row: Record<string, string | number>,
   ) => {
     const newEntry: {
-      [x: string]: string | number;
-    } = {};
-    const actualColumnNames = Object.keys(row);
+      [x: string]: string | number
+    } = {}
+    const actualColumnNames = Object.keys(row)
     actualColumnNames.forEach((columnName, index) => {
-      const newColumnName: string = this.tablesInfo[tableName]
-        .migratedColumnNames[index];
-      newEntry[newColumnName] = row[columnName];
-    });
-    return newEntry;
-  };
+      const newColumnName: string =
+        this.tablesInfo[tableName].migratedColumnNames[index]
+      newEntry[newColumnName] = row[columnName]
+    })
+    return newEntry
+  }
 
   public tddMigrateColumnNamesForTable = (
     tableName: QuickenTableName,
-    row: Record<any, any>
-  ) => this.migrateColumnNamesForTable(tableName, row);
+    row: Record<any, any>,
+  ) => this.migrateColumnNamesForTable(tableName, row)
 
   private migrateAndNormalizeTable = (
     tableName: QuickenTableName,
-    tableData: Record<string, any>
+    tableData: Record<string, any>,
   ) => {
     const newTable: {
-      [key: string]: Record<string, any>;
-    } = {};
+      [key: string]: Record<string, any>
+    } = {}
     tableData.forEach((row: Record<string, any>) => {
-      const migratedRow = this.migrateColumnNamesForTable(tableName, row);
-      newTable[migratedRow[this.tablesInfo[tableName].newKey]] = migratedRow;
-    });
-    const keyBase = this.tablesInfo[tableName].newKey;
-    const capitalStr = keyBase.charAt(0).toUpperCase() + keyBase.slice(1);
-    const byKey = `by${capitalStr}`;
-    const allKeys = pluralize(`all${capitalStr}`);
+      const migratedRow = this.migrateColumnNamesForTable(tableName, row)
+      newTable[migratedRow[this.tablesInfo[tableName].newKey]] = migratedRow
+    })
+    const keyBase = this.tablesInfo[tableName].newKey
+    const capitalStr = keyBase.charAt(0).toUpperCase() + keyBase.slice(1)
+    const byKey = `by${capitalStr}`
+    const allKeys = pluralize(`all${capitalStr}`)
     const normalizedTable = {
       [byKey]: newTable,
       [allKeys]: Object.keys(newTable),
-    };
-    return normalizedTable;
-  };
+    }
+    return normalizedTable
+  }
 
   private migrateData = (quickenData: Record<any, any>) => {
-    const migratedTables: ExtractorResponse = {};
+    const migratedTables: ExtractorResponse = {}
     // console.log('Quicken data prior to column name migration: ', quickenData);
-    const tableNames = Object.keys(quickenData) as Array<QuickenTableName>;
+    const tableNames = Object.keys(quickenData) as Array<QuickenTableName>
     tableNames.forEach((tableName) => {
       migratedTables[tableName] = this.migrateAndNormalizeTable(
         tableName,
-        quickenData[tableName]
-      );
+        quickenData[tableName],
+      )
       // console.log('Migrated Table: ', migratedTables);
-    });
-    return migratedTables;
-  };
+    })
+    return migratedTables
+  }
 
   fetchAndMigrateQuickenData = async (): Promise<ExtractorResponse> => {
-    const quickenData = await this.fetchRequestedData(this.tablesInfo);
+    const quickenData = await this.fetchRequestedData(this.tablesInfo)
     // console.log(quickenData);
-    return this.migrateData(quickenData);
-  };
+    return this.migrateData(quickenData)
+  }
 }
