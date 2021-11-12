@@ -1,6 +1,4 @@
-import { TablesDataRequest } from "../../QuickenDataExtractor";
-
-export const dataRequestFixture: TablesDataRequest = [
+export const dataRequestFixture = [
   // {
   //   tableName: 'ZTRANSACTION',
   //   cols: [
@@ -16,103 +14,103 @@ export const dataRequestFixture: TablesDataRequest = [
   //   ]
   // },
   {
-    tableName: 'ZFIPOSITION',
+    tableName: "ZFIPOSITION",
     cols: [
-      'Z_PK',
-      'ZSECURITYTYPE',
-      'ZMARKETVALUE',
-      'ZSECURITYUNITPRICE',
-      'ZSHARESPERCONTRACT',
-      'ZSTRIKEPRICE',
-      'ZUNITPRICE',
-      'ZUNITS',
-      'ZASSETCLASS',
-      'ZGUID',
-      'ZSECURITYNAME',
-      'ZSECURITYTICKER',
-      'ZUNIQUEID'
+      "Z_PK",
+      "ZSECURITYTYPE",
+      "ZMARKETVALUE",
+      "ZSECURITYUNITPRICE",
+      "ZSHARESPERCONTRACT",
+      "ZSTRIKEPRICE",
+      "ZUNITPRICE",
+      "ZUNITS",
+      "ZASSETCLASS",
+      "ZGUID",
+      "ZSECURITYNAME",
+      "ZSECURITYTICKER",
+      "ZUNIQUEID",
     ],
     filters: [
       {
-        name: 'ZSECURITYTICKER',
-        expression: '=',
-        values: ['TEPLX'],
-      }
-    ]
+        name: "ZSECURITYTICKER",
+        expression: "=",
+        values: ["TEPLX"],
+      },
+    ],
   },
   {
-    tableName: 'ZACCOUNT',
+    tableName: "ZACCOUNT",
     cols: [
-      { 'Z_PK': 'primaryKey' },
-      'ZACTIVE',
-      'ZSINGLEMUTUALFUND',
-      'ZSTATUSTRANSACTIONCOUNT',
-      'ZFINANCIALINSTITUTION',
-      'ZCREATIONTIMESTAMP',
-      'ZMODIFICATIONTIMESTAMP',
-      'ZCURRENCY',
-      'ZGUID',
-      'ZNAME',
-      'ZNOTES',
-      'ZTYPENAME',
-      'ZCLOSED',
+      { Z_PK: "primaryKey" },
+      "ZACTIVE",
+      "ZSINGLEMUTUALFUND",
+      "ZSTATUSTRANSACTIONCOUNT",
+      "ZFINANCIALINSTITUTION",
+      "ZCREATIONTIMESTAMP",
+      "ZMODIFICATIONTIMESTAMP",
+      "ZCURRENCY",
+      "ZGUID",
+      "ZNAME",
+      "ZNOTES",
+      "ZTYPENAME",
+      "ZCLOSED",
     ],
     filters: [
       {
-        name: 'ZCLOSED',
-        expression: '=',
-        values: [ 0 ],
+        name: "ZCLOSED",
+        expression: "=",
+        values: [0],
       },
       {
-        name: 'ZTYPENAME',
-        expression: '=',
-        values: ['RETIREMENTROTHIRA', 'BROKERAGENORMAL'],
-      }
-    ]
+        name: "ZTYPENAME",
+        expression: "=",
+        values: ["RETIREMENTROTHIRA", "BROKERAGENORMAL"],
+      },
+    ],
   },
-  { 
-    tableName: 'ZSECURITY', 
+  {
+    tableName: "ZSECURITY",
     cols: [
-      { 'Z_PK': 'primaryKey'},
-      { 'ZTYPE': 'type' }, 
-      { 'ZLATESTQUOTEDATE': 'latestQuoteDate'}, 
-      { 'ZMODIFICATIONTIMESTAMP': 'modificationTimestamp' }, 
-      { 'ZMOSTRECENTQUOTEDOWNLOADTIMESTAMP': 'latestQuoteTimestamp' },
-      { 'ZASSETCLASSPERCENTAGEDOMESTICBOND': 'latestQuoteDate' },
-      { 'ZASSETCLASSPERCENTAGEINTLBOND': 'percentageIntlBond' },
-      { 'ZASSETCLASSPERCENTAGEINTLSTOCK': 'percentageIntlStock' },
-      { 'ZASSETCLASSPERCENTAGELARGESTOCK': 'percentageLargeStock' },
-      { 'ZASSETCLASSPERCENTAGEMONEYMRKT': 'percentageMoneyMarket' },
-      { 'ZASSETCLASSPERCENTAGEOTHER': 'percentageOther' },
-      { 'ZASSETCLASSPERCENTAGESMALLSTOCK': 'percentageSmallStock' },
-      { 'ZASSETCLASS': 'assetClass' },
-      { 'ZGUID': 'globalUID' },
-      { 'ZISSUETYPE': 'issueType' },
-      { 'ZNAME': 'name' },
-      { 'ZTICKER': 'ticker' },
+      { Z_PK: "primaryKey" },
+      { ZTYPE: "type" },
+      { ZLATESTQUOTEDATE: "latestQuoteDate" },
+      { ZMODIFICATIONTIMESTAMP: "modificationTimestamp" },
+      { ZMOSTRECENTQUOTEDOWNLOADTIMESTAMP: "latestQuoteTimestamp" },
+      { ZASSETCLASSPERCENTAGEDOMESTICBOND: "latestQuoteDate" },
+      { ZASSETCLASSPERCENTAGEINTLBOND: "percentageIntlBond" },
+      { ZASSETCLASSPERCENTAGEINTLSTOCK: "percentageIntlStock" },
+      { ZASSETCLASSPERCENTAGELARGESTOCK: "percentageLargeStock" },
+      { ZASSETCLASSPERCENTAGEMONEYMRKT: "percentageMoneyMarket" },
+      { ZASSETCLASSPERCENTAGEOTHER: "percentageOther" },
+      { ZASSETCLASSPERCENTAGESMALLSTOCK: "percentageSmallStock" },
+      { ZASSETCLASS: "assetClass" },
+      { ZGUID: "globalUID" },
+      { ZISSUETYPE: "issueType" },
+      { ZNAME: "name" },
+      { ZTICKER: "ticker" },
     ],
     filters: [
       {
-        name: 'ZISSUETYPE',
-        expression: '!=',
-        values: ['IN'],
-      }
-    ] 
+        name: "ZISSUETYPE",
+        expression: "!=",
+        values: ["IN"],
+      },
+    ],
   },
   {
-    tableName: 'ZLOT',
+    tableName: "ZLOT",
     cols: [
-      'Z_PK',
-      'ZPOSITION',
-      'ZACQUISITIONDATE',
-      'ZCREATIONTIMESTAMP',
-      'ZINITIALTRANSACTIONDATE',
-      'ZLATESTTRANSACTIONDATE',
-      'ZMODIFICATIONTIMESTAMP',
-      'ZINITIALCOSTBASIS',
-      'ZINITIALUNITS',
-      'ZLATESTCOSTBASIS',
-      'ZLATESTUNITS',
+      "Z_PK",
+      "ZPOSITION",
+      "ZACQUISITIONDATE",
+      "ZCREATIONTIMESTAMP",
+      "ZINITIALTRANSACTIONDATE",
+      "ZLATESTTRANSACTIONDATE",
+      "ZMODIFICATIONTIMESTAMP",
+      "ZINITIALCOSTBASIS",
+      "ZINITIALUNITS",
+      "ZLATESTCOSTBASIS",
+      "ZLATESTUNITS",
     ],
     // filters: [
     //   {
@@ -123,22 +121,22 @@ export const dataRequestFixture: TablesDataRequest = [
     // ]
   },
   {
-    tableName: 'ZLOTMOD',
+    tableName: "ZLOTMOD",
     cols: [
-      'Z_PK',
-      'ZTERMTYPE',
-      'ZLOT INTEGER',
-      'ZLOTASSIGNMENT',
-      'ZTRANSACTION',
-      'ZCREATIONTIMESTAMP',
-      'ZMODIFICATIONTIMESTAMP',
-      'ZTRANSACTIONDATE',
-      'ZAFTERCOSTBASIS',
-      'ZAFTERPOSITIONCOSTBASIS',
-      'ZAFTERPOSITIONUNITS',
-      'ZAFTERUNITS',
-      'ZBEFORECOSTBASIS',
-      'ZBEFOREUNITS',
+      "Z_PK",
+      "ZTERMTYPE",
+      "ZLOT INTEGER",
+      "ZLOTASSIGNMENT",
+      "ZTRANSACTION",
+      "ZCREATIONTIMESTAMP",
+      "ZMODIFICATIONTIMESTAMP",
+      "ZTRANSACTIONDATE",
+      "ZAFTERCOSTBASIS",
+      "ZAFTERPOSITIONCOSTBASIS",
+      "ZAFTERPOSITIONUNITS",
+      "ZAFTERUNITS",
+      "ZBEFORECOSTBASIS",
+      "ZBEFOREUNITS",
     ],
     filters: [
       // {
@@ -146,26 +144,24 @@ export const dataRequestFixture: TablesDataRequest = [
       //   expression: '!=',
       //   values: [1]
       // }
-    ]
+    ],
   },
   {
-    tableName: 'ZLOTASSIGNMENT',
-    cols: [
-      'ALL'
-    ]
+    tableName: "ZLOTASSIGNMENT",
+    cols: ["ALL"],
   },
-  { 
-    tableName: 'ZPOSITION', 
+  {
+    tableName: "ZPOSITION",
     cols: [
-      'Z_PK',
-      'ZTYPE',
-      'ZACCOUNT',
-      'ZSECURITY',
-      'ZCREATIONTIMESTAMP',
-      'ZMODIFICATIONTIMESTAMP',
-      'ZGUID',
-      'ZUNIQUEID',
-      'ZUNIQUEIDTYPE'
-    ] 
+      "Z_PK",
+      "ZTYPE",
+      "ZACCOUNT",
+      "ZSECURITY",
+      "ZCREATIONTIMESTAMP",
+      "ZMODIFICATIONTIMESTAMP",
+      "ZGUID",
+      "ZUNIQUEID",
+      "ZUNIQUEIDTYPE",
+    ],
   },
 ]
