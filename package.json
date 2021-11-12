@@ -5,7 +5,7 @@
   "main": "bin/index.js",
   "types": "bin/index.d.ts",
   "scripts": {
-    "build": "yarn build:clean && yarn build:types && yarn build:js",
+    "build": "npm run build:clean && npm run build:types && npm run build:js",
     "build:clean": "rm -rf bin",
     "build:types": "tsc",
     "build:js": "babel src --ignore src/**/tests/** --out-dir bin --extensions '.ts,.tsx'",
