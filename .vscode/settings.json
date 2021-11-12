@@ -54,5 +54,13 @@
     "ZTYPENAME",
     "ZUNIQUEID",
     "ZUNIQUEIDTYPE"
-  ]
+  ],
+  "cSpell.customDictionaries": {
+    "custom-dictionary-workspace": {
+      "name": "custom-dictionary-workspace",
+      "path": "${workspaceFolder:quicken-data-extractor}/.cspell/custom-dictionary-workspace.txt",
+      "addWords": true,
+      "scope": "workspace"
+    }
+  }
 }
