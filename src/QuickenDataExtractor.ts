@@ -1,6 +1,6 @@
 import sqlite3 = require("sqlite3")
 import { open } from "sqlite"
-import pluralize = require("pluralize")
+import pluralize from "pluralize"
 
 export const tables: TablesDataRequest = {
   ZACCOUNT: {
