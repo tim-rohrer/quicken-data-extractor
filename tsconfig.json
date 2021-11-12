@@ -4,15 +4,8 @@
     "rootDir": "./",
     "preserveConstEnums": true,
     "strictNullChecks": true,
-    "lib": [
-      "DOM"
-    ],
-    "types": [
-      "jest"
-    ],
+    "types": ["jest"],
     "noEmit": true
   },
-  "include": [
-    "src/**/*",
-  ],
+  "include": ["src/**/*"]
 }
