@@ -1,4 +1,4 @@
-import sqlite3 = require("sqlite3")
+import sqlite3 from "sqlite3"
 import { open } from "sqlite"
 import pluralize from "pluralize"
 
@@ -358,7 +358,7 @@ export class QuickenDataExtractor {
 
   private migrateAndNormalizeTable = (
     tableName: QuickenTableName,
-    tableData: Record<string, Array>,
+    tableData: Record<string, Array<string>>,
   ) => {
     const newTable: {
       [key: string]: Record<string, string>
