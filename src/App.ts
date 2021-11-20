@@ -1,7 +1,10 @@
 import express, { Request, Response, NextFunction } from "express"
 import cors from "cors"
 // eslint-disable-next-line no-unused-vars
-import { ExtractorResponse, QuickenDataExtractor } from "./QuickenDataExtractor"
+import {
+  ExtractorResponse,
+  QuickenDataExtractor,
+} from "./QuickenDataExtractor"
 
 interface AppResults {
   responseTimestamp: Date
@@ -33,8 +36,9 @@ class App {
           const extractor = new QuickenDataExtractor(
             "./src/tests/fixtures/data.sqlite3",
           )
-          const response = await extractor.fetchAndMigrateQuickenData()
-          // console.log("Resonse: ", response);
+          const response =
+            await extractor.fetchAndMigrateQuickenData()
+          // console.log("Response: ", response);
           const appResults: AppResults = {
             responseTimestamp: new Date(),
             quickenData: response,

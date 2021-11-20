@@ -231,7 +231,7 @@ export type TablesDataRequest = {
 
 export interface ExtractorResponse {
   [table: string]: {
-    [key: string]: Record<string, any>
+    [key: string]: Record<string, string>
     // [z: string]: Array<string>,
   }
 }
@@ -279,7 +279,11 @@ export class QuickenDataExtractor {
       if (whereString !== "") {
         whereString += " AND "
       }
-      whereString += ` (${this.prepareWhereElement(name, expression, values)}) `
+      whereString += ` (${this.prepareWhereElement(
+        name,
+        expression,
+        values,
+      )}) `
     })
     return whereString
   }
@@ -312,7 +316,9 @@ export class QuickenDataExtractor {
               : quickenColumnNames.toString()
           let filtersString = ""
           if (filters !== undefined && filters.length > 0) {
-            filtersString = `WHERE ${this.prepareWhereString(filters)}`
+            filtersString = `WHERE ${this.prepareWhereString(
+              filters,
+            )}`
           }
           const tableResults = await this.fetchTableData(
             colsString,
@@ -347,22 +353,27 @@ export class QuickenDataExtractor {
 
   public tddMigrateColumnNamesForTable = (
     tableName: QuickenTableName,
-    row: Record<any, any>,
+    row: Record<string, string>,
   ) => this.migrateColumnNamesForTable(tableName, row)
 
   private migrateAndNormalizeTable = (
     tableName: QuickenTableName,
-    tableData: Record<string, any>,
+    tableData: Record<string, Array>,
   ) => {
     const newTable: {
-      [key: string]: Record<string, any>
+      [key: string]: Record<string, string>
     } = {}
-    tableData.forEach((row: Record<string, any>) => {
-      const migratedRow = this.migrateColumnNamesForTable(tableName, row)
-      newTable[migratedRow[this.tablesInfo[tableName].newKey]] = migratedRow
+    tableData.forEach((row: Record<string, string>) => {
+      const migratedRow = this.migrateColumnNamesForTable(
+        tableName,
+        row,
+      )
+      newTable[migratedRow[this.tablesInfo[tableName].newKey]] =
+        migratedRow
     })
     const keyBase = this.tablesInfo[tableName].newKey
-    const capitalStr = keyBase.charAt(0).toUpperCase() + keyBase.slice(1)
+    const capitalStr =
+      keyBase.charAt(0).toUpperCase() + keyBase.slice(1)
     const byKey = `by${capitalStr}`
     const allKeys = pluralize(`all${capitalStr}`)
     const normalizedTable = {
@@ -375,7 +386,9 @@ export class QuickenDataExtractor {
   private migrateData = (quickenData: Record<any, any>) => {
     const migratedTables: ExtractorResponse = {}
     // console.log('Quicken data prior to column name migration: ', quickenData);
-    const tableNames = Object.keys(quickenData) as Array<QuickenTableName>
+    const tableNames = Object.keys(
+      quickenData,
+    ) as Array<QuickenTableName>
     tableNames.forEach((tableName) => {
       migratedTables[tableName] = this.migrateAndNormalizeTable(
         tableName,
@@ -386,9 +399,12 @@ export class QuickenDataExtractor {
     return migratedTables
   }
 
-  fetchAndMigrateQuickenData = async (): Promise<ExtractorResponse> => {
-    const quickenData = await this.fetchRequestedData(this.tablesInfo)
-    // console.log(quickenData);
-    return this.migrateData(quickenData)
-  }
+  fetchAndMigrateQuickenData =
+    async (): Promise<ExtractorResponse> => {
+      const quickenData = await this.fetchRequestedData(
+        this.tablesInfo,
+      )
+      // console.log(quickenData);
+      return this.migrateData(quickenData)
+    }
 }

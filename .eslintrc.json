@@ -23,37 +23,32 @@
     "plugin:@typescript-eslint/recommended",
     "prettier"
   ],
-  "plugins": [
-    "@typescript-eslint",
-    "node",
-    "prettier"
+  "plugins": ["@typescript-eslint", "node", "prettier"],
+  "overrides": [
+    {
+      "files": "./src/*",
+      "plugins": ["jest"],
+      "extends": ["plugin:jest/recommended", "plugin:jest/style"]
+    },
+    {
+      "files": "./test/*",
+      "extends": ["plugin:cypress/recommended"],
+      "plugins": ["cypress"]
+    }
   ],
-  "overrides": [{
-    "files": "./src/*",
-    "plugins": ["jest"],
-    "extends": [
-      "plugin:jest/recommended",
-      "plugin:jest/style"
-    ]
-  }, {
-    "files": "./test/*",
-    "extends": [
-      "plugin:cypress/recommended"
-    ],
-    "plugins": [
-      "cypress"
-    ]
-  }],
   "rules": {
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": ["error"],
     "no-shadow": "off",
     "@typescript-eslint/no-shadow": ["error"],
     "import/extensions": 0,
-    "lines-between-class-members": ["error", "always", {
-      "exceptAfterSingleLine": true
-    }],
-    "quotes": ["error", "double"],
-    "prettier/prettier": ["error"]
+    "lines-between-class-members": [
+      "error",
+      "always",
+      {
+        "exceptAfterSingleLine": true
+      }
+    ],
+    "quotes": ["error", "double"]
   }
 }
