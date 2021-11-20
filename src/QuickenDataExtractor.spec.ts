@@ -8,7 +8,7 @@ import fs from "fs"
 
 let extractor: QuickenDataExtractor
 
-describe("QuickendDataExtractor module", () => {
+describe("QuickenDataExtractor module", () => {
   beforeEach(() => {
     extractor = new QuickenDataExtractor(
       "./src/tests/fixtures/data.sqlite3",
