@@ -60,6 +60,7 @@
   "dependencies": {
     "pluralize": "^8.0.0",
     "sqlite": "^4.0.23",
-    "sqlite3": "^5.0.2"
+    "sqlite3": "^5.0.2",
+    "ts-results": "^3.3.0"
   }
 }
