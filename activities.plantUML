@@ -1,0 +1,6 @@
+@startuml
+start
+:User requests update
+of data from Quicken;
+stop
+@enduml

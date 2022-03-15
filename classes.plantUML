@@ -1,0 +1,13 @@
+@startuml Classes and Interfaces
+' skinparam linetype ortho
+
+class Investor implements Account {
+- name: String
++ setName()
+}
+
+interface "Account" {
+
+}
+
+@enduml
