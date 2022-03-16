@@ -13,6 +13,4 @@ endif
 :App imports/maps accounts;
 :App imports/maps investments;
 stop
-start
-stop
 @enduml
