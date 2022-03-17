@@ -1,6 +1,16 @@
-@startuml
+@startuml Activities
 start
-:User requests update
-of data from Quicken;
+:User requests import of investment data from Quicken;
+:App loads drag and drop componenent;
+:User uploads file;
+:App validates file;
+if (valid?) then (yes)
+  :import data;
+else (no)
+  :Provide error to user;
+  stop
+endif
+:App imports/maps accounts;
+:App imports/maps investments;
 stop
 @enduml

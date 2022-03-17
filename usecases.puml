@@ -1,0 +1,29 @@
+@startuml Use Cases
+left to right direction
+skinparam actorStyle Hollow
+
+actor User as user
+
+rectangle "My Investing App" {
+  package "Quicken Import" {
+    usecase QI1 as "All
+      Investing
+      Data" 
+    usecase QI2 as "Update
+      Accounts"
+    usecase QI3 as "Update
+      Investments"
+  }
+  package "Portfolio Analysis" {
+    usecase PA1 as "Display
+      Total
+      Returns"
+  }
+}
+
+user --> QI1
+user --> QI2
+user --> QI3
+user --> PA1
+
+@enduml
