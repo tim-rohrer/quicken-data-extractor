@@ -1,9 +1,13 @@
-import { SqliteDAO, SqliteDAOGetParams} from "./SqliteDAO"
+import { SqliteDAO, SqliteDAOGetParams } from "./SqliteDAO"
 import pluralize from "pluralize"
-import QuickenSqlBuilder, { QuickenSqlBuilderParams } from "./QuickenSqlBuilder"
-import InvestmentAccountMapped, { QuickenAccountData } from "./InvestmentAccountMapped"
-import SecurityMapped, { QuickenSecurityData } from "./SeurityMapped"
-import { ZSECURITYEntity } from "./@types/Database"
+import QuickenSqlBuilder, {
+  QuickenSqlBuilderParams,
+} from "./QuickenSqlBuilder"
+import InvestmentAccountMapped, {
+  QuickenAccountData,
+} from "./InvestmentAccountMapped"
+import SecurityMapped, { QuickenSecurityData } from "./SecurityMapped"
+import { QuickenLotData } from "./LotMapped"
 
 export const tables: TablesDataRequest = {
   ZACCOUNT: {
@@ -47,7 +51,11 @@ export const tables: TablesDataRequest = {
       {
         name: "ZTYPENAME",
         expression: "=",
-        values: ["RETIREMENTROTHIRA", "BROKERAGENORMAL", "BROKERAGEOTHER"],
+        values: [
+          "RETIREMENTROTHIRA",
+          "BROKERAGENORMAL",
+          "BROKERAGEOTHER",
+        ],
       },
     ],
     newKey: "accountName",
@@ -233,14 +241,16 @@ export type TablesDataRequest = {
 }
 
 export class QuickenDataExtractor {
-
-  private static fetchFromQuicken<T>(params: QuickenSqlBuilderParams) {
+  private static fetchFromQuicken<T>(
+    params: QuickenSqlBuilderParams,
+  ) {
     const builder = new QuickenSqlBuilder(params)
     const getParams: SqliteDAOGetParams = {
       stmt: builder.stmt(),
-      parameterVals: builder.parameterVals()
+      parameterVals: builder.parameterVals(),
     }
-    const results = SqliteDAO.getByStatementAndParameters<T>(getParams)
+    const results =
+      SqliteDAO.getByStatementAndParameters<T>(getParams)
     if (results.ok) {
       return results.val
     } else {
@@ -249,27 +259,35 @@ export class QuickenDataExtractor {
   }
 
   static getInvestmentAccounts = () => {
-    const params: QuickenSqlBuilderParams  = {
+    const params: QuickenSqlBuilderParams = {
       primaryTable: "ZACCOUNT",
       primaryKey: "ZFINANCIALINSTITUTION",
       joiningTable: "ZFINANCIALINSTITUTION",
       joiningKey: "Z_PK",
       joiningType: "LEFT",
-      filter: [{
-        columnName: "ZTYPENAME",
-        expression: "=",
-        values: ["RETIREMENTROTHIRA", "BROKERAGENORMAL", "BROKERAGEOTHER"],
-    },]
+      filter: [
+        {
+          columnName: "ZTYPENAME",
+          expression: "=",
+          values: [
+            "RETIREMENTROTHIRA",
+            "BROKERAGENORMAL",
+            "BROKERAGEOTHER",
+          ],
+        },
+      ],
     }
-    const accounts = QuickenDataExtractor.fetchFromQuicken<QuickenAccountData>(params)
+    const accounts =
+      QuickenDataExtractor.fetchFromQuicken<QuickenAccountData>(
+        params,
+      )
     const accountsMapped: string[] = []
-    accounts.forEach(account => {
+    accounts.forEach((account) => {
       const x = new InvestmentAccountMapped(account)
       accountsMapped.push(JSON.stringify(x))
     })
     return accountsMapped
   }
-
 
   static getSecurities = () => {
     const params: QuickenSqlBuilderParams = {
@@ -278,18 +296,36 @@ export class QuickenDataExtractor {
       joiningTable: "",
       joiningKey: "",
       joiningType: "INNER",
-      filter: [{
-        columnName: "ZISSUETYPE",
-        expression: "<>",
-        values: ["IN"]
-      }]
+      filter: [
+        {
+          columnName: "ZISSUETYPE",
+          expression: "<>",
+          values: ["IN"],
+        },
+      ],
     }
-    const securities = QuickenDataExtractor.fetchFromQuicken<QuickenSecurityData>(params)
+    const securities =
+      QuickenDataExtractor.fetchFromQuicken<QuickenSecurityData>(
+        params,
+      )
     const securitiesMapped: string[] = []
-    securities.forEach(security => {
+    securities.forEach((security) => {
       const x = new SecurityMapped(security)
       securitiesMapped.push(JSON.stringify(x))
     })
     return securitiesMapped
+  }
+
+  static getLots = () => {
+    const params: QuickenSqlBuilderParams = {
+      primaryTable: "ZLOT",
+      primaryKey: "",
+      joiningTable: "",
+      joiningKey: "",
+      joiningType: "INNER",
+      filter: [],
+    }
+    const lots =
+      QuickenDataExtractor.fetchFromQuicken<QuickenLotData>(params)
   }
 }
