@@ -1,4 +1,4 @@
-import SecurityMapped from "./SeurityMapped"
+import SecurityMapped from "./SecurityMapped"
 
 let quickenData: any
 
@@ -42,18 +42,18 @@ const quickenSecurityFixture = {
     ZLATESTPRICECHANGEPERCENT: 0,
     ZSHARESPERCONTRACT: 0,
     ZSTRIKEPRICE: 0,
-    ZASSETCLASS: 'SMALLSTOCK',
+    ZASSETCLASS: "SMALLSTOCK",
     ZDATASOURCE: null,
     ZGOALSTRING: null,
-    ZGUID: '2446814D-A218-4A75-B8C5-F1046E62F909',
-    ZISSUETYPE: 'CS',
-    ZNAME: 'BIOLIFE SOLUTIONS',
-    ZOPTIONTYPE: '0',
-    ZSYNCID: '306250513350253057',
-    ZTICKER: 'BLFS',
+    ZGUID: "2446814D-A218-4A75-B8C5-F1046E62F909",
+    ZISSUETYPE: "CS",
+    ZNAME: "BIOLIFE SOLUTIONS",
+    ZOPTIONTYPE: "0",
+    ZSYNCID: "306250513350253057",
+    ZTICKER: "BLFS",
     ZASSETMIXTUREDATAISUSERDEFINED: null,
-    ZASSETCLASSPERCENTAGECASH: 0
-  }
+    ZASSETCLASSPERCENTAGECASH: 0,
+  },
 }
 
 describe("Security Mapped", () => {
@@ -68,12 +68,18 @@ describe("Security Mapped", () => {
   it("contains mapped data elements of name and ticker", () => {
     const testSecurityMapped = new SecurityMapped(quickenData)
 
-    expect(testSecurityMapped.name).toEqual(quickenData.ZSECURITY.ZNAME)
-    expect(testSecurityMapped.ticker).toEqual(quickenData.ZSECURITY.ZTICKER)    
+    expect(testSecurityMapped.name).toEqual(
+      quickenData.ZSECURITY.ZNAME,
+    )
+    expect(testSecurityMapped.ticker).toEqual(
+      quickenData.ZSECURITY.ZTICKER,
+    )
   })
   it("contains the type of issue and asset class", () => {
     const testSecurityMapped = new SecurityMapped(quickenData)
 
-    expect(testSecurityMapped.assetClass).toEqual(quickenData.ZSECURITY.ZASSETCLASS)
+    expect(testSecurityMapped.assetClass).toEqual(
+      quickenData.ZSECURITY.ZASSETCLASS,
+    )
   })
 })
