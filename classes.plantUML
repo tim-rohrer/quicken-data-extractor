@@ -6,7 +6,24 @@ class Investor implements Account {
 + setName()
 }
 
-interface "Account" {
+interface "InvestmentAccount" {
+  primaryKey: number
+  activeAccount: boolean
+  singleMutualFund: boolean
+  statusTransactionCount: unknown
+  financialInstitution: string
+  creationTimestamp: Date
+  modificationTimestamp: Date
+  currency: string
+  globalUID: unknown
+  accountName: string
+  notes: string
+  typeName: string
+  closed: boolean
+  isActive(): boolean
+}
+
+class "InvestmentAccountImpl" implements InvestmentAccount {
 
 }
 

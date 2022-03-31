@@ -1,5 +1,6 @@
 import { Database, SqliteError } from "better-sqlite3"
 import { Ok, Err, Result } from "ts-results"
+import { ZACCOUNTEntity } from "./@types/Database"
 //  import APIError from "../../common/APIError"
 //  import { HttpStatusCode } from "../../common/BaseError"
 //  import DbError from "../../common/DbError"
@@ -8,14 +9,14 @@ import { Ok, Err, Result } from "ts-results"
 //  import { PatchUserDTO } from "../dtos/PatchUserDTO"
 //  import Logger from "../../common/logger"
 
-function escapeSQL(value: string) {
-  // eslint-disable-next-line quotes
-  return '"' + String(value).replace(/"/g, '""') + '"'
+export interface SqliteDAOGetParams {
+  stmt: string,
+  parameterVals: Record<string, string | number>
 }
+
 export class SqliteDAO {
   private static instance: SqliteDAO = new SqliteDAO()
   private static db: Database
-  private static table: Record<string, unknown>
 
   private constructor() {
     if (SqliteDAO.instance) {
@@ -30,15 +31,26 @@ export class SqliteDAO {
     SqliteDAO.db = conn
   }
 
-  // public static get(sql: string, params): Promise<unknown> {
-  //   return new Error("Not implemented yet")
-  // }
+  private static escapeSQL(value: string) {
+    // eslint-disable-next-line quotes
+    return '"' + String(value).replace(/"/g, '""') + '"'
+  }
 
-  public static getAll(
-    table: string,
-  ): Result<Array<Record<any, any>>, typeof SqliteError> {
+  public static getByStatementAndParameters<T>(
+    params: SqliteDAOGetParams
+  ): Result<T[], typeof SqliteError> {
     const tableData = SqliteDAO.db
-      .prepare(`SELECT * FROM ${escapeSQL(table)}`)
+      .prepare(params.stmt)
+      .expand()
+      .all(params.parameterVals)
+    return Ok(tableData as T[])
+  }
+
+  public static getAllFromTable(
+    table: string,
+  ): Result<unknown[], typeof SqliteError> {
+    const tableData = SqliteDAO.db
+      .prepare(`SELECT * FROM ${SqliteDAO.escapeSQL(table)}`)
       .all()
     return Ok(tableData)
   }

@@ -1,6 +1,9 @@
-import sqlite3 from "sqlite3"
-import { open } from "sqlite"
+import { SqliteDAO, SqliteDAOGetParams} from "./SqliteDAO"
 import pluralize from "pluralize"
+import QuickenSqlBuilder, { QuickenSqlBuilderParams } from "./QuickenSqlBuilder"
+import InvestmentAccountMapped, { QuickenAccountData } from "./InvestmentAccountMapped"
+import SecurityMapped, { QuickenSecurityData } from "./SeurityMapped"
+import { ZSECURITYEntity } from "./@types/Database"
 
 export const tables: TablesDataRequest = {
   ZACCOUNT: {
@@ -44,7 +47,7 @@ export const tables: TablesDataRequest = {
       {
         name: "ZTYPENAME",
         expression: "=",
-        values: ["RETIREMENTROTHIRA", "BROKERAGENORMAL"],
+        values: ["RETIREMENTROTHIRA", "BROKERAGENORMAL", "BROKERAGEOTHER"],
       },
     ],
     newKey: "accountName",
@@ -229,182 +232,64 @@ export type TablesDataRequest = {
   [x: string]: TableColsMap
 }
 
-export interface ExtractorResponse {
-  [table: string]: {
-    [key: string]: Record<string, string>
-    // [z: string]: Array<string>,
-  }
-}
-
 export class QuickenDataExtractor {
-  dbPathName: string
-  tablesInfo: TablesDataRequest
 
-  constructor(dbPathName: string) {
-    this.dbPathName = dbPathName
-    this.tablesInfo = tables
-  }
-
-  public openDatabase = async () => {
-    try {
-      return await open({
-        filename: this.dbPathName,
-        driver: sqlite3.Database,
-      })
-    } catch (err) {
-      throw new Error("Error opening database")
+  private static fetchFromQuicken<T>(params: QuickenSqlBuilderParams) {
+    const builder = new QuickenSqlBuilder(params)
+    const getParams: SqliteDAOGetParams = {
+      stmt: builder.stmt(),
+      parameterVals: builder.parameterVals()
+    }
+    const results = SqliteDAO.getByStatementAndParameters<T>(getParams)
+    if (results.ok) {
+      return results.val
+    } else {
+      return []
     }
   }
 
-  private prepareWhereElement = (
-    name: string,
-    expression: string,
-    values: Array<string | number | null>,
-  ) => {
-    let elementString = ""
-    values.forEach((value) => {
-      if (elementString !== "") {
-        elementString += " OR "
-      }
-      if (typeof value === "string") {
-        elementString += `${name} ${expression} '${value}'`
-      } else elementString += `${name} ${expression} ${value}`
-    })
-    return elementString
-  }
-
-  private prepareWhereString = (filters: Array<RowFilter>) => {
-    let whereString = ""
-    filters.forEach(({ name, expression, values }) => {
-      if (whereString !== "") {
-        whereString += " AND "
-      }
-      whereString += ` (${this.prepareWhereElement(
-        name,
-        expression,
-        values,
-      )}) `
-    })
-    return whereString
-  }
-
-  private fetchTableData = async (
-    colsString: string,
-    tableName: QuickenTableName,
-    whereString: string,
-  ) => {
-    try {
-      const myDB = await this.openDatabase()
-      const tableResult = await myDB.all<Row[]>(
-        `SELECT ${colsString} FROM ${tableName} ${whereString}`,
-      )
-      await myDB.close()
-      return tableResult
-    } catch (err) {
-      throw new Error("Unable to fetch table data")
+  static getInvestmentAccounts = () => {
+    const params: QuickenSqlBuilderParams  = {
+      primaryTable: "ZACCOUNT",
+      primaryKey: "ZFINANCIALINSTITUTION",
+      joiningTable: "ZFINANCIALINSTITUTION",
+      joiningKey: "Z_PK",
+      joiningType: "LEFT",
+      filter: [{
+        columnName: "ZTYPENAME",
+        expression: "=",
+        values: ["RETIREMENTROTHIRA", "BROKERAGENORMAL", "BROKERAGEOTHER"],
+    },]
     }
-  }
-
-  private fetchRequestedData = async (request: TablesDataRequest) => {
-    let results = {}
-    await Promise.all(
-      Object.values(request).map(
-        async ({ tableName, quickenColumnNames, filters }) => {
-          const colsString =
-            quickenColumnNames[0] === "ALL"
-              ? "*"
-              : quickenColumnNames.toString()
-          let filtersString = ""
-          if (filters !== undefined && filters.length > 0) {
-            filtersString = `WHERE ${this.prepareWhereString(
-              filters,
-            )}`
-          }
-          const tableResults = await this.fetchTableData(
-            colsString,
-            tableName,
-            filtersString,
-          )
-          results = {
-            ...results,
-            [tableName]: tableResults,
-          }
-        },
-      ),
-    )
-    return results
-  }
-
-  private migrateColumnNamesForTable = (
-    tableName: QuickenTableName,
-    row: Record<string, string | number>,
-  ) => {
-    const newEntry: {
-      [x: string]: string | number
-    } = {}
-    const actualColumnNames = Object.keys(row)
-    actualColumnNames.forEach((columnName, index) => {
-      const newColumnName: string =
-        this.tablesInfo[tableName].migratedColumnNames[index]
-      newEntry[newColumnName] = row[columnName]
+    const accounts = QuickenDataExtractor.fetchFromQuicken<QuickenAccountData>(params)
+    const accountsMapped: string[] = []
+    accounts.forEach(account => {
+      const x = new InvestmentAccountMapped(account)
+      accountsMapped.push(JSON.stringify(x))
     })
-    return newEntry
+    return accountsMapped
   }
 
-  public tddMigrateColumnNamesForTable = (
-    tableName: QuickenTableName,
-    row: Record<string, string>,
-  ) => this.migrateColumnNamesForTable(tableName, row)
 
-  private migrateAndNormalizeTable = (
-    tableName: QuickenTableName,
-    tableData: Record<string, Array<string>>,
-  ) => {
-    const newTable: {
-      [key: string]: Record<string, string>
-    } = {}
-    tableData.forEach((row: Record<string, string>) => {
-      const migratedRow = this.migrateColumnNamesForTable(
-        tableName,
-        row,
-      )
-      newTable[migratedRow[this.tablesInfo[tableName].newKey]] =
-        migratedRow
-    })
-    const keyBase = this.tablesInfo[tableName].newKey
-    const capitalStr =
-      keyBase.charAt(0).toUpperCase() + keyBase.slice(1)
-    const byKey = `by${capitalStr}`
-    const allKeys = pluralize(`all${capitalStr}`)
-    const normalizedTable = {
-      [byKey]: newTable,
-      [allKeys]: Object.keys(newTable),
+  static getSecurities = () => {
+    const params: QuickenSqlBuilderParams = {
+      primaryTable: "ZSECURITY",
+      primaryKey: "",
+      joiningTable: "",
+      joiningKey: "",
+      joiningType: "INNER",
+      filter: [{
+        columnName: "ZISSUETYPE",
+        expression: "<>",
+        values: ["IN"]
+      }]
     }
-    return normalizedTable
-  }
-
-  private migrateData = (quickenData: Record<any, any>) => {
-    const migratedTables: ExtractorResponse = {}
-    // console.log('Quicken data prior to column name migration: ', quickenData);
-    const tableNames = Object.keys(
-      quickenData,
-    ) as Array<QuickenTableName>
-    tableNames.forEach((tableName) => {
-      migratedTables[tableName] = this.migrateAndNormalizeTable(
-        tableName,
-        quickenData[tableName],
-      )
-      // console.log('Migrated Table: ', migratedTables);
+    const securities = QuickenDataExtractor.fetchFromQuicken<QuickenSecurityData>(params)
+    const securitiesMapped: string[] = []
+    securities.forEach(security => {
+      const x = new SecurityMapped(security)
+      securitiesMapped.push(JSON.stringify(x))
     })
-    return migratedTables
+    return securitiesMapped
   }
-
-  fetchAndMigrateQuickenData =
-    async (): Promise<ExtractorResponse> => {
-      const quickenData = await this.fetchRequestedData(
-        this.tablesInfo,
-      )
-      // console.log(quickenData);
-      return this.migrateData(quickenData)
-    }
 }
