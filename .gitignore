@@ -6,6 +6,9 @@ bin
 dist
 lib
 
+# jest coverage
+src/tests/coverage/*
+
 # misc
 .DS_Store
 .env
