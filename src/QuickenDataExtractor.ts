@@ -8,6 +8,7 @@ import InvestmentAccountMapped, {
 } from "./InvestmentAccountMapped"
 import SecurityMapped, { QuickenSecurityData } from "./SecurityMapped"
 import LotMapped, { QuickenLotData } from "./LotMapped"
+import PositionMapped, { QuickenPositionData } from "./PositionMapped"
 
 export const tables: TablesDataRequest = {
   ZACCOUNT: {
@@ -314,6 +315,25 @@ export class QuickenDataExtractor {
       securitiesMapped.push(JSON.stringify(x))
     })
     return securitiesMapped
+  }
+
+  static getPositions = () => {
+    const params: QuickenSqlBuilderParams = {
+      primaryTable: "ZPOSITION",
+      primaryKey: "",
+      joiningTable: "",
+      joiningKey: "",
+      joiningType: "INNER",
+      filter: [],
+    }
+    const positions =
+      QuickenDataExtractor.fetchFromQuicken<QuickenPositionData>(params)
+    const positionsMapped: string[] = []
+    positions.forEach((position) => {
+      const x = new PositionMapped(position)
+      positionsMapped.push(JSON.stringify(x))
+    })
+    return positionsMapped    
   }
 
   static getLots = () => {

@@ -32,6 +32,15 @@ describe("QuickenDataExtractor module", () => {
       expect(securitiesData).toBeInstanceOf(Array)
     })
   })
+  describe("getPositions", () => {
+    it.only("should return all Positions serialized in an array", () => {
+      const positionsData = QuickenDataExtractor.getPositions()
+
+      console.log(JSON.parse(positionsData[0]))
+      expect(positionsData.length).toBeGreaterThan(0)
+      expect(positionsData).toBeInstanceOf(Array)
+    })
+  })
   describe("getLots", () => {
     it("should return all lots serialized in an array", () => {
       const lotsData = QuickenDataExtractor.getLots()
