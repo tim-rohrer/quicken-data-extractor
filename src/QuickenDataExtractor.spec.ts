@@ -32,4 +32,13 @@ describe("QuickenDataExtractor module", () => {
       expect(securitiesData).toBeInstanceOf(Array)
     })
   })
+  describe("getLots", () => {
+    it("should return all lots serialized in an array", () => {
+      const lotsData = QuickenDataExtractor.getLots()
+
+      console.log(JSON.parse(lotsData[0]))
+      expect(lotsData.length).toBeGreaterThan(0)
+      expect(lotsData).toBeInstanceOf(Array)
+    })
+  })
 })
