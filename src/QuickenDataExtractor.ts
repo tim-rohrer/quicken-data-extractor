@@ -250,6 +250,7 @@ export class QuickenDataExtractor {
       stmt: builder.stmt(),
       parameterVals: builder.parameterVals(),
     }
+    console.log(getParams)
     const results =
       SqliteDAO.getByStatementAndParameters<T>(getParams)
     if (results.ok) {
@@ -262,10 +263,14 @@ export class QuickenDataExtractor {
   static getInvestmentAccounts = () => {
     const params: QuickenSqlBuilderParams = {
       primaryTable: "ZACCOUNT",
-      primaryKey: "ZFINANCIALINSTITUTION",
-      joiningTable: "ZFINANCIALINSTITUTION",
-      joiningKey: "Z_PK",
-      joiningType: "LEFT",
+      joiningOption: [
+        {
+          primaryKey: "ZFINANCIALINSTITUTION",
+          table: "ZFINANCIALINSTITUTION",
+          key: "Z_PK",
+          type: "LEFT",
+        },
+      ],
       filter: [
         {
           columnName: "ZTYPENAME",
@@ -293,10 +298,7 @@ export class QuickenDataExtractor {
   static getSecurities = () => {
     const params: QuickenSqlBuilderParams = {
       primaryTable: "ZSECURITY",
-      primaryKey: "",
-      joiningTable: "",
-      joiningKey: "",
-      joiningType: "INNER",
+      joiningOption: [],
       filter: [
         {
           columnName: "ZISSUETYPE",
@@ -320,29 +322,46 @@ export class QuickenDataExtractor {
   static getPositions = () => {
     const params: QuickenSqlBuilderParams = {
       primaryTable: "ZPOSITION",
-      primaryKey: "",
-      joiningTable: "",
-      joiningKey: "",
-      joiningType: "INNER",
+      // joiningOption: [],
+      joiningOption: [
+        {
+          primaryKey: "ZSECURITY",
+          table: "ZSECURITY",
+          key: "Z_PK",
+          type: "LEFT",
+        },
+        {
+          primaryKey: "Z_PK",
+          table: "ZLOT",
+          key: "ZPOSITION",
+          type: "INNER",
+        },
+      ],
       filter: [],
     }
     const positions =
-      QuickenDataExtractor.fetchFromQuicken<QuickenPositionData>(params)
+      QuickenDataExtractor.fetchFromQuicken<QuickenPositionData>(
+        params,
+      )
     const positionsMapped: string[] = []
     positions.forEach((position) => {
       const x = new PositionMapped(position)
       positionsMapped.push(JSON.stringify(x))
     })
-    return positionsMapped    
+    return positionsMapped
   }
 
   static getLots = () => {
     const params: QuickenSqlBuilderParams = {
       primaryTable: "ZLOT",
-      primaryKey: "ZPOSITION",
-      joiningTable: "ZPOSITION",
-      joiningKey: "Z_PK",
-      joiningType: "INNER",
+      joiningOption: [
+        {
+          primaryKey: "ZPOSITION",
+          table: "ZPOSITION",
+          key: "Z_PK",
+          type: "INNER",
+        },
+      ],
       filter: [],
     }
     const lots =

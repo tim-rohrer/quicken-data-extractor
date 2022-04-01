@@ -1,35 +1,33 @@
-import LotMapped from "./LotMapped"
+import PositionMapped from "./PositionMapped"
 
 let quickenData: any
 
-const quickenLotFixture = {
+const quickenPositionFixture = {}
 
-}
-
-describe("Lot Mapped", () => {
+describe("Position Mapped", () => {
   beforeAll(() => {
-    quickenData = quickenLotFixture
+    quickenData = quickenPositionFixture
   })
-  it("instantiates with a property of Quicken Lot Data", () => {
-    const testLotMapped = new LotMapped(quickenData)
+  it("instantiates with a property of Quicken Position Data", () => {
+    const testPositionMapped = new PositionMapped(quickenData)
 
-    expect(testLotMapped).toHaveProperty("quickenData")
+    expect(testPositionMapped).toHaveProperty("quickenData")
   })
   it("contains mapped data elements of name and ticker", () => {
-    const testLotMapped = new LotMapped(quickenData)
+    const testPositionMapped = new PositionMapped(quickenData)
 
-    expect(testLotMapped.name).toEqual(
-      quickenData.ZLOT.ZNAME,
+    expect(testPositionMapped.name).toEqual(
+      quickenData.ZPOSITION.ZNAME,
     )
-    expect(testLotMapped.ticker).toEqual(
-      quickenData.ZLOT.ZTICKER,
+    expect(testPositionMapped.ticker).toEqual(
+      quickenData.ZPOSITION.ZTICKER,
     )
   })
   it("contains the type of issue and asset class", () => {
-    const testLotMapped = new LotMapped(quickenData)
+    const testPositionMapped = new PositionMapped(quickenData)
 
-    expect(testLotMapped.assetClass).toEqual(
-      quickenData.ZLOT.ZASSETCLASS,
+    expect(testPositionMapped.assetClass).toEqual(
+      quickenData.ZPOSITION.ZASSETCLASS,
     )
   })
 })

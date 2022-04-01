@@ -8,8 +8,12 @@ export interface QuickenPositionData {
 }
 
 interface PositionFromQuicken {
-  name: string
   ticker: string
+}
+
+interface PositionFromQuicken {
+  ticker: string
+  account: string
   issueType: unknown
   assetClass: unknown
   readonly quickenData: QuickenPositionData
@@ -19,8 +23,8 @@ export default class PositionMapped
   extends BaseMapped<QuickenPositionData>
   implements PositionFromQuicken
 {
-  name = ""
   ticker = ""
+  account = ""
   issueType: unknown
   assetClass: unknown
   readonly quickenData
@@ -35,5 +39,7 @@ export default class PositionMapped
     const positionData = qData.ZPOSITION
     const accountData = qData.ZACCOUNT
     const securityData = qData.ZSECURITY
+    // console.log(qData)
+    this.ticker = this.validatedAsString(securityData.ZTICKER)
   }
 }

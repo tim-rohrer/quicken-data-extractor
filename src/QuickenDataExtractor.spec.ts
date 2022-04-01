@@ -6,10 +6,7 @@ let db: Database
 describe("QuickenDataExtractor module", () => {
   beforeAll(async () => {
     const dbFileName = "data.sqlite3"
-    db = new DatabaseConstructor(
-      dbFileName, 
-      {readonly: true}
-    )
+    db = new DatabaseConstructor(dbFileName, { readonly: true })
     await SqliteDAO.injectDB(db)
   })
 
@@ -18,7 +15,8 @@ describe("QuickenDataExtractor module", () => {
   })
   describe("getInvestmentAccounts", () => {
     it("should return investment accounts serialized in an array", () => {
-      const accountsData = QuickenDataExtractor.getInvestmentAccounts()
+      const accountsData =
+        QuickenDataExtractor.getInvestmentAccounts()
 
       expect(accountsData.length).toBeGreaterThan(0)
       expect(accountsData).toBeInstanceOf(Array)
