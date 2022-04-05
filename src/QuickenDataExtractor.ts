@@ -250,7 +250,6 @@ export class QuickenDataExtractor {
       stmt: builder.stmt(),
       parameterVals: builder.parameterVals(),
     }
-    console.log(getParams)
     const results =
       SqliteDAO.getByStatementAndParameters<T>(getParams)
     if (results.ok) {
@@ -325,17 +324,35 @@ export class QuickenDataExtractor {
       // joiningOption: [],
       joiningOption: [
         {
-          primaryKey: "ZSECURITY",
-          table: "ZSECURITY",
-          key: "Z_PK",
-          type: "LEFT",
+          type: "",
+          leftTable: "ZPOSITION",
+          leftKey: "ZSECURITY",
+          rightTable: "ZSECURITY",
+          rightKey: "Z_PK",
+
         },
         {
-          primaryKey: "Z_PK",
-          table: "ZLOT",
-          key: "ZPOSITION",
-          type: "INNER",
+          type: "",
+          leftTable: "ZPOSITION",
+          leftKey: "Z_PK",
+          rightTable: "ZLOT",
+          rightKey: "ZPOSITION",
+
         },
+        {
+          type: "",
+          leftTable: "ZLOT",
+          leftKey: "Z_PK",
+          rightTable: "ZLOTMOD",
+          rightKey: "ZLOT"
+        },
+        {
+          type: "",
+          leftTable: "ZLOTMOD",
+          leftKey: "ZTRANSACTION",
+          rightTable: "ZTRANSACTION",
+          rightKey: "Z_PK"
+        }
       ],
       filter: [],
     }
@@ -355,6 +372,12 @@ export class QuickenDataExtractor {
     const params: QuickenSqlBuilderParams = {
       primaryTable: "ZLOT",
       joiningOption: [
+        {
+          primaryKey: "Z_PK",
+          table: "ZLOTMOD",
+          key: "ZLOT",
+          type: "INNER"
+        },
         {
           primaryKey: "ZPOSITION",
           table: "ZPOSITION",

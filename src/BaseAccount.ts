@@ -28,6 +28,7 @@ export default abstract class BaseAccount implements Account {
     this.lastModified = timeStamp
     this.dateClosed = null
   }
+
   institution?: string | undefined
 
   public toJSON = () => {

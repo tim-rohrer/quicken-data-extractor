@@ -15,22 +15,23 @@ type SqlFilter = {
   values: string[] | number[]
 }
 
-type JoiningOption = {
-  primaryKey: string
-  table: string
-  key: string
-  type: "LEFT" | "INNER" | "RIGHT"
+type JoinCondition = {
+  type: "LEFT"| "INNER" | ""
+  leftTable: string
+  leftKey: string
+  rightTable: string
+  rightKey: string
 }
 
 export interface QuickenSqlBuilderParams {
   primaryTable: string
-  joiningOption: JoiningOption[]
+  joiningOption: JoinCondition[]
   filter: SqlFilter[] | null
 }
 
 export default class QuickenSqlBuilder {
   primaryTable
-  joiningOption: JoiningOption[]
+  joiningOption: JoinCondition[]
   filter
   index
   vals: Record<string, string | number>
@@ -103,18 +104,18 @@ export default class QuickenSqlBuilder {
   }
 
   private prepareJoiningSegment(
-    primaryTable: string,
-    joiningOption: JoiningOption[],
+    joiningOption: JoinCondition[],
   ) {
     let joiningSegment = ""
     joiningOption.forEach((joiningElement) => {
       const type = joiningElement.type
-      const table = QuickenSqlBuilder.escapeSQL(joiningElement.table)
-      const primaryKey = QuickenSqlBuilder.escapeSQL(
-        joiningElement.primaryKey,
+      const leftTable = QuickenSqlBuilder.escapeSQL(joiningElement.leftTable)
+      const leftKey = QuickenSqlBuilder.escapeSQL(
+        joiningElement.leftKey,
       )
-      const key = QuickenSqlBuilder.escapeSQL(joiningElement.key)
-      joiningSegment += ` ${type} JOIN ${table} ON ${primaryTable}.${primaryKey} = ${table}.${key}`
+      const rightTable = QuickenSqlBuilder.escapeSQL(joiningElement.rightTable)
+      const rightKey = QuickenSqlBuilder.escapeSQL(joiningElement.rightKey)
+      joiningSegment += ` ${type} JOIN ${rightTable} ON ${leftTable}.${leftKey} = ${rightTable}.${rightKey}`
     })
     return joiningSegment
   }
@@ -124,7 +125,6 @@ export default class QuickenSqlBuilder {
     let stmt = `SELECT * FROM ${this.primaryTable}`
     if (this.joiningOption.length > 0)
       stmt += this.prepareJoiningSegment(
-        this.primaryTable,
         this.joiningOption,
       )
     // if (this.joiningTable !== '""' && this.joiningKey !== '""') {

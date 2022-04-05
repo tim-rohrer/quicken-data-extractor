@@ -14,8 +14,8 @@ describe("BaseMapped", () => {
       name: "John",
     })
 
-    expect(test.validatedAsString("Tim")).toEqual("Tim")
-    expect(test.validatedAsString(null)).toEqual("BAD VALUE PROVIDED")
+    expect(test.validatedAsString("Tim")).toBe("Tim")
+    expect(test.validatedAsString(null)).toBe("BAD VALUE PROVIDED")
   })
   it("Validates a value as a Date, not null/undefined", () => {
     const test = new TestBaseMapped({
@@ -23,7 +23,7 @@ describe("BaseMapped", () => {
     })
 
     expect(test.validatedAsDate(new Date(48384878873826))).toBeInstanceOf(Date)
-    expect(test.validatedAsDate(null)).toEqual(null)
+    expect(test.validatedAsDate(null)).toBeNull()
   })
   it("Accepts a currency and returns enum value from ISO 4217", () => {
     const test = new TestBaseMapped({

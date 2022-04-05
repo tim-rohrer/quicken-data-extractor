@@ -34,7 +34,27 @@ describe("QuickenDataExtractor module", () => {
     it.only("should return all Positions serialized in an array", () => {
       const positionsData = QuickenDataExtractor.getPositions()
 
-      console.log(JSON.parse(positionsData[0]))
+      const amazon = []
+      positionsData.forEach(positionData => {
+        const position = JSON.parse(positionData)
+        if (position.ticker === "ABBV") {
+          amazon.push(
+            {
+              // data: position, 
+              lot: position.quickenData.ZLOT.Z_PK,
+              lotMod: position.quickenData.ZLOTMOD.Z_PK,
+              deletionCount: position.quickenData.ZLOT.ZDELETIONCOUNT,
+              acquisitionDateOrig: position.quickenData.ZLOT.ZACQUISITIONDATE,
+              acquisitionDate: new Date(position.quickenData.ZLOT.ZACQUISITIONDATE),
+              initialTransactionDate: new Date(position.quickenData.ZLOT.ZINITIALTRANSACTIONDATE),
+              initialUnits: position.quickenData.ZLOT.ZINITIALUNITS,
+              amount: position.quickenData.ZTRANSACTION.ZAMOUNT,
+              ticker: position.quickenData.ZSECURITY.ZTICKER
+            })
+        }
+      })
+      console.log(amazon)
+      // console.log(JSON.parse(positionsData[0]))
       expect(positionsData.length).toBeGreaterThan(0)
       expect(positionsData).toBeInstanceOf(Array)
     })

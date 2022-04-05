@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="3156px" preserveAspectRatio="none" style="width:1539px;height:3156px;background:#FFFFFF;" version="1.1" viewBox="0 0 1539 3156" width="1539px" zoomAndPan="magnify"><defs/><g><!--MD5=[df5888964937fa9da8d025e1bb667121]
+class ZACCOUNT--><g id="elem_ZACCOUNT"><rect codeLine="3" fill="#F1F1F1" height="1905.8438" id="ZACCOUNT" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="487" x="7" y="7"/><ellipse cx="206.75" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M210.8594,29 L203.1406,29 L203.1406,16.6094 L210.8594,16.6094 L210.8594,18.7656 L205.5938,18.7656 L205.5938,21.4375 L210.3594,21.4375 L210.3594,23.5938 L205.5938,23.5938 L205.5938,26.8438 L210.8594,26.8438 L210.8594,29 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="227.25" y="27.8467">ZACCOUNT</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="493" y1="39" y2="39"/><ellipse cx="18" cy="50" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="105" x="27" y="55.9951">Z_PK: INTEGER</text><ellipse cx="18" cy="66.2969" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="115" x="27" y="72.292">Z_ENT: INTEGER</text><ellipse cx="18" cy="82.5938" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="27" y="88.5889">Z_OPT: INTEGER</text><ellipse cx="18" cy="98.8906" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="129" x="27" y="104.8857">ZACTIVE: INTEGER</text><ellipse cx="18" cy="115.1875" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="328" x="27" y="121.1826">ZCANDIDATENOCASHTRANSACTIONS: INTEGER</text><ellipse cx="18" cy="131.4844" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="306" x="27" y="137.4795">ZCANDIDATESINGLEMUTUALFUND: INTEGER</text><ellipse cx="18" cy="147.7813" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="137" x="27" y="153.7764">ZCLOSED: INTEGER</text><ellipse cx="18" cy="164.0781" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="245" x="27" y="170.0732">ZCONFIRMATIONNEEDED: INTEGER</text><ellipse cx="18" cy="180.375" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="280" x="27" y="186.3701">ZCOSTBASISALGORITHMDEBT: INTEGER</text><ellipse cx="18" cy="196.6719" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="337" x="27" y="202.667">ZCOSTBASISALGORITHMMUTUALFUND: INTEGER</text><ellipse cx="18" cy="212.9688" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="294" x="27" y="218.9639">ZCOSTBASISALGORITHMOPTION: INTEGER</text><ellipse cx="18" cy="229.2656" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="290" x="27" y="235.2607">ZCOSTBASISALGORITHMOTHER: INTEGER</text><ellipse cx="18" cy="245.5625" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="289" x="27" y="251.5576">ZCOSTBASISALGORITHMSTOCK: INTEGER</text><ellipse cx="18" cy="261.8594" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="199" x="27" y="267.8545">ZDELETIONCOUNT: INTEGER</text><ellipse cx="18" cy="278.1563" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="159" x="27" y="284.1514">ZIMPORTQID: INTEGER</text><ellipse cx="18" cy="294.4531" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="194" x="27" y="300.4482">ZLASTCHECKNUM: INTEGER</text><ellipse cx="18" cy="310.75" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="146" x="27" y="316.7451">ZLIQUIDITY: INTEGER</text><ellipse cx="18" cy="327.0469" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="278" x="27" y="333.042">ZLOANCOMPOUNDINGPERIOD: INTEGER</text><ellipse cx="18" cy="343.3438" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="229" x="27" y="349.3389">ZLOANHASBEENSETUP: INTEGER</text><ellipse cx="18" cy="359.6406" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="359" x="27" y="365.6357">ZLOANHASOFFEREDTOCONVERTLIABILITY: INTEGER</text><ellipse cx="18" cy="375.9375" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="270" x="27" y="381.9326">ZLOANPAYMENTFREQUENCY: INTEGER</text><ellipse cx="18" cy="392.2344" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="237" x="27" y="398.2295">ZLOANPAYMENTPERIOD: INTEGER</text><ellipse cx="18" cy="408.5313" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="190" x="27" y="414.5264">ZLOANRATETYPE: INTEGER</text><ellipse cx="18" cy="424.8281" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="193" x="27" y="430.8232">ZLOANTERMTYPE: INTEGER</text><ellipse cx="18" cy="441.125" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="254" x="27" y="447.1201">ZLOANUSEMATURITYDATE: INTEGER</text><ellipse cx="18" cy="457.4219" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="382" x="27" y="463.417">ZMOSTRECENTDOWNLOADSESSIONNUMBER: INTEGER</text><ellipse cx="18" cy="473.7188" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="247" x="27" y="479.7139">ZNOCASHTRANSACTIONS: INTEGER</text><ellipse cx="18" cy="490.0156" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="249" x="27" y="496.0107">ZOFXPAYMENTSENABLED: INTEGER</text><ellipse cx="18" cy="506.3125" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="285" x="27" y="512.3076">ZOFXTRANSFERDESTENABLED: INTEGER</text><ellipse cx="18" cy="522.6094" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="306" x="27" y="528.6045">ZOFXTRANSFERSOURCEENABLED: INTEGER</text><ellipse cx="18" cy="538.9063" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="412" x="27" y="544.9014">ZONLINEBANKINGACCOUNTINFOSESSIONNEEDED: INTEGER</text><ellipse cx="18" cy="555.2031" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="338" x="27" y="561.1982">ZONLINEBANKINGACCOUNTISENABLED: INTEGER</text><ellipse cx="18" cy="571.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="369" x="27" y="577.4951">ZONLINEBANKINGACCOUNTISINBIDCHANGE: INTEGER</text><ellipse cx="18" cy="587.7969" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="386" x="27" y="593.792">ZONLINEBANKINGAWAITINGINITIALDOWNLOAD: INTEGER</text><ellipse cx="18" cy="604.0938" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="399" x="27" y="610.0889">ZONLINEBANKINGCHANGEPINFIRSTCOMPLETED: INTEGER</text><ellipse cx="18" cy="620.3906" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="156" x="27" y="626.3857">ZQUICKENID: INTEGER</text><ellipse cx="18" cy="636.6875" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="285" x="27" y="642.6826">ZSCHEDULELOOKAHEADVALUE: INTEGER</text><ellipse cx="18" cy="652.9844" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="202" x="27" y="658.9795">ZSIMPLEINVESTING: INTEGER</text><ellipse cx="18" cy="669.2813" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="225" x="27" y="675.2764">ZSINGLEMUTUALFUND: INTEGER</text><ellipse cx="18" cy="685.5781" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="242" x="27" y="691.5732">ZSTATUSNUMATTEMPTS: INTEGER</text><ellipse cx="18" cy="701.875" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="284" x="27" y="707.8701">ZSTATUSTRANSACTIONCOUNT: INTEGER</text><ellipse cx="18" cy="718.1719" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="237" x="27" y="724.167">ZSYNCRESETREQUIRED: INTEGER</text><ellipse cx="18" cy="734.4688" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="202" x="27" y="740.4639">ZSYNCWITHCLOUD: INTEGER</text><ellipse cx="18" cy="750.7656" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="142" x="27" y="756.7607">ZTAXABLE: INTEGER</text><ellipse cx="18" cy="767.0625" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="237" x="27" y="773.0576">ZUSEDINAUTOUPDATES: INTEGER</text><ellipse cx="18" cy="783.3594" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="199" x="27" y="789.3545">ZUSEDINREPORTS: INTEGER</text><ellipse cx="18" cy="799.6563" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="270" x="27" y="805.6514">ZBILLPAYPAYMENTACCOUNT: INTEGER</text><ellipse cx="18" cy="815.9531" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="292" x="27" y="821.9482">ZBILLPAYPROVIDERINSTITUTION: INTEGER</text><ellipse cx="18" cy="832.25" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="182" x="27" y="838.2451">ZCLOUDFILOGIN: INTEGER</text><ellipse cx="18" cy="848.5469" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="130" x="27" y="854.542">ZERROR: INTEGER</text><ellipse cx="18" cy="864.8438" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="235" x="27" y="870.8389">ZFINANCIALINSTITUTION: INTEGER</text><ellipse cx="18" cy="881.1406" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="263" x="27" y="887.1357">ZLOANINTERESTCATEGORY: INTEGER</text><ellipse cx="18" cy="897.4375" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="265" x="27" y="903.4326">ZLOANSMARTTRANSACTION: INTEGER</text><ellipse cx="18" cy="913.7344" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="195" x="27" y="919.7295">ZCLOSEDDATE: TIMESTAMP</text><ellipse cx="18" cy="930.0313" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="252" x="27" y="936.0264">ZCREATIONTIMESTAMP: TIMESTAMP</text><ellipse cx="18" cy="946.3281" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="281" x="27" y="952.3232">ZLOANFIRSTPAYMENTDATE: TIMESTAMP</text><ellipse cx="18" cy="962.625" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="279" x="27" y="968.6201">ZLOANNEXTPAYMENTDATE: TIMESTAMP</text><ellipse cx="18" cy="978.9219" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="281" x="27" y="984.917">ZMODIFICATIONTIMESTAMP: TIMESTAMP</text><ellipse cx="18" cy="995.2188" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="416" x="27" y="1001.2139">ZONLINEBANKINGLASTCONNECTEDTIMESTAMP: TIMESTAMP</text><ellipse cx="18" cy="1011.5156" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="371" x="27" y="1017.5107">ZONLINEBANKINGLEDGERBALANCEDATE: TIMESTAMP</text><ellipse cx="18" cy="1027.8125" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="254" x="27" y="1033.8076">ZREVIEWEDTIMESTAMP: TIMESTAMP</text><ellipse cx="18" cy="1044.1094" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="166" x="27" y="1050.1045">ZCREDITLIMIT: DECIMAL</text><ellipse cx="18" cy="1060.4063" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="185" x="27" y="1066.4014">ZINTERESTRATE: DECIMAL</text><ellipse cx="18" cy="1076.7031" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="244" x="27" y="1082.6982">ZLOANOPENINGBALANCE: DECIMAL</text><ellipse cx="18" cy="1093" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="157" x="27" y="1098.9951">ZLOANTERM: DECIMAL</text><ellipse cx="18" cy="1109.2969" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="374" x="27" y="1115.292">ZONLINEBANKINGLEDGERBALANCEAMOUNT: DECIMAL</text><ellipse cx="18" cy="1125.5938" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="249" x="27" y="1131.5889">ZBANKROUTINGNUMBER: VARCHAR</text><ellipse cx="18" cy="1141.8906" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="265" x="27" y="1147.8857">ZBILLPAYROUTINGNUMBER: VARCHAR</text><ellipse cx="18" cy="1158.1875" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="320" x="27" y="1164.1826">ZCHECKPRINTINGPROPERTIESJSON: VARCHAR</text><ellipse cx="18" cy="1174.4844" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="164" x="27" y="1180.4795">ZCURRENCY: VARCHAR</text><ellipse cx="18" cy="1190.7813" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="183" x="27" y="1196.7764">ZDATASOURCE: VARCHAR</text><ellipse cx="18" cy="1207.0781" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="174" x="27" y="1213.0732">ZFILTERSJSON: VARCHAR</text><ellipse cx="18" cy="1223.375" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="121" x="27" y="1229.3701">ZGUID: VARCHAR</text><ellipse cx="18" cy="1239.6719" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="240" x="27" y="1245.667">ZIMPORTSOURCEFILEID: VARCHAR</text><ellipse cx="18" cy="1255.9688" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="213" x="27" y="1261.9639">ZIMPORTSOURCEID: VARCHAR</text><ellipse cx="18" cy="1272.2656" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="126" x="27" y="1278.2607">ZNAME: VARCHAR</text><ellipse cx="18" cy="1288.5625" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="134" x="27" y="1294.5576">ZNOTES: VARCHAR</text><ellipse cx="18" cy="1304.8594" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="224" x="27" y="1310.8545">ZNOTIFICATIONSJSON: VARCHAR</text><ellipse cx="18" cy="1321.1563" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="282" x="27" y="1327.1514">ZOFXBILLPAYSERVICESTATUS: VARCHAR</text><ellipse cx="18" cy="1337.4531" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="265" x="27" y="1343.4482">ZOFXLASTBANKMAILTOKEN: VARCHAR</text><ellipse cx="18" cy="1353.75" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="263" x="27" y="1359.7451">ZOFXLASTPAYMENTTOKEN: VARCHAR</text><ellipse cx="18" cy="1370.0469" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="270" x="27" y="1376.042">ZOFXLASTTRANSFERTOKEN: VARCHAR</text><ellipse cx="18" cy="1386.3438" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="328" x="27" y="1392.3389">ZONLINEBANKINGACCOUNTNUMBER: VARCHAR</text><ellipse cx="18" cy="1402.6406" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="381" x="27" y="1408.6357">ZONLINEBANKINGAGGREGATORACCOUNTID: VARCHAR</text><ellipse cx="18" cy="1418.9375" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="327" x="27" y="1424.9326">ZONLINEBANKINGCONNECTIONTYPE: VARCHAR</text><ellipse cx="18" cy="1435.2344" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="292" x="27" y="1441.2295">ZONLINEBANKINGCUSTOMERID: VARCHAR</text><ellipse cx="18" cy="1451.5313" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="248" x="27" y="1457.5264">ZONLINEBANKINGDTEND: VARCHAR</text><ellipse cx="18" cy="1467.8281" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="280" x="27" y="1473.8232">ZONLINEBANKINGLASTTOKEN: VARCHAR</text><ellipse cx="18" cy="1484.125" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="266" x="27" y="1490.1201">ZONLINEBANKINGLASTUUID: VARCHAR</text><ellipse cx="18" cy="1500.4219" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="331" x="27" y="1506.417">ZONLINEBANKINGOFXACCOUNTTYPE: VARCHAR</text><ellipse cx="18" cy="1516.7188" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="292" x="27" y="1522.7139">ZONLINEBANKINGPREVIOUSBID: VARCHAR</text><ellipse cx="18" cy="1533.0156" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="268" x="27" y="1539.0107">ZONLINEBANKINGSERVERID: VARCHAR</text><ellipse cx="18" cy="1549.3125" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="320" x="27" y="1555.3076">ZONLINEBILLPAYACCOUNTNUMBER: VARCHAR</text><ellipse cx="18" cy="1565.6094" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="319" x="27" y="1571.6045">ZONLINEBILLPAYCONNECTIONTYPE: VARCHAR</text><ellipse cx="18" cy="1581.9063" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="284" x="27" y="1587.9014">ZONLINEBILLPAYCUSTOMERID: VARCHAR</text><ellipse cx="18" cy="1598.2031" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="323" x="27" y="1604.1982">ZONLINEBILLPAYOFXACCOUNTTYPE: VARCHAR</text><ellipse cx="18" cy="1614.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="230" x="27" y="1620.4951">ZRECONCILEINFOJSON: VARCHAR</text><ellipse cx="18" cy="1630.7969" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="181" x="27" y="1636.792">ZREGIONCODE: VARCHAR</text><ellipse cx="18" cy="1647.0938" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="315" x="27" y="1653.0889">ZSCHEDULELOOKAHEADUNITTYPE: VARCHAR</text><ellipse cx="18" cy="1663.3906" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="138" x="27" y="1669.3857">ZSYNCID: VARCHAR</text><ellipse cx="18" cy="1679.6875" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="162" x="27" y="1685.6826">ZTYPENAME: VARCHAR</text><ellipse cx="18" cy="1695.9844" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="218" x="27" y="1701.9795">ZUSERDESCRIPTION: VARCHAR</text><ellipse cx="18" cy="1712.2813" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="258" x="27" y="1718.2764">ZCHECKPRINTINGPROPERTIES: BLOB</text><ellipse cx="18" cy="1728.5781" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="112" x="27" y="1734.5732">ZFILTERS: BLOB</text><ellipse cx="18" cy="1744.875" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="162" x="27" y="1750.8701">ZNOTIFICATIONS: BLOB</text><ellipse cx="18" cy="1761.1719" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="168" x="27" y="1767.167">ZRECONCILEINFO: BLOB</text><ellipse cx="18" cy="1777.4688" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="238" x="27" y="1783.4639">ZANOMALOUSSYNCSTATUS: BLOB</text><ellipse cx="18" cy="1793.7656" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="387" x="27" y="1799.7607">ZONLINEBANKINGACCOUNTNUMBERMASKED: VARCHAR</text><ellipse cx="18" cy="1810.0625" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="461" x="27" y="1816.0576">ZONLINEBANKINGAGGREGATIONPENDINGENABLEMENTINFO: BLOB</text><ellipse cx="18" cy="1826.3594" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="439" x="27" y="1832.3545">ZONLINEBANKINGAGGREGATIONENABLEMENTCOUNT: INTEGER</text><ellipse cx="18" cy="1842.6563" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="443" x="27" y="1848.6514">ZONLINEBANKINGAGGREGATIONDISABLEMENTCOUNT: INTEGER</text><ellipse cx="18" cy="1858.9531" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="361" x="27" y="1864.9482">ZONLINEBANKINGACCOUNTDESCRIPTION: VARCHAR</text><ellipse cx="18" cy="1875.25" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="198" x="27" y="1881.2451">ZAUTORECONCILE: INTEGER</text><ellipse cx="18" cy="1891.5469" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="167" x="27" y="1897.542">ZQ17SYNCID: VARCHAR</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="493" y1="1904.8438" y2="1904.8438"/></g><!--MD5=[f18ee797d0f1336f2061ac40e57ab7a6]
+class ZLOT--><g id="elem_ZLOT"><rect codeLine="120" fill="#F1F1F1" height="341.3438" id="ZLOT" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="319" x="91" y="2342"/><ellipse cx="227.75" cy="2358" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M231.8594,2364 L224.1406,2364 L224.1406,2351.6094 L231.8594,2351.6094 L231.8594,2353.7656 L226.5938,2353.7656 L226.5938,2356.4375 L231.3594,2356.4375 L231.3594,2358.5938 L226.5938,2358.5938 L226.5938,2361.8438 L231.8594,2361.8438 L231.8594,2364 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="37" x="248.25" y="2362.8467">ZLOT</text><line style="stroke:#181818;stroke-width:0.5;" x1="92" x2="409" y1="2374" y2="2374"/><ellipse cx="102" cy="2385" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="206" x="111" y="2390.9951">Z_PK: INTEGER PRIMARY KEY,</text><ellipse cx="102" cy="2401.2969" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="119" x="111" y="2407.292">Z_ENT: INTEGER,</text><ellipse cx="102" cy="2417.5938" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="111" y="2423.5889">Z_OPT: INTEGER,</text><ellipse cx="102" cy="2433.8906" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="203" x="111" y="2439.8857">ZDELETIONCOUNT: INTEGER,</text><ellipse cx="102" cy="2450.1875" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="160" x="111" y="2456.1826">ZQUICKENID: INTEGER,</text><ellipse cx="102" cy="2466.4844" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="149" x="111" y="2472.4795">ZPOSITION: INTEGER,</text><ellipse cx="102" cy="2482.7813" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="230" x="111" y="2488.7764">ZACQUISITIONDATE: TIMESTAMP,</text><ellipse cx="102" cy="2499.0781" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="256" x="111" y="2505.0732">ZCREATIONTIMESTAMP: TIMESTAMP,</text><ellipse cx="102" cy="2515.375" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="285" x="111" y="2521.3701">ZINITIALTRANSACTIONDATE: TIMESTAMP,</text><ellipse cx="102" cy="2531.6719" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="293" x="111" y="2537.667">ZLATESTTRANSACTIONDATE: TIMESTAMP,</text><ellipse cx="102" cy="2547.9688" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="285" x="111" y="2553.9639">ZMODIFICATIONTIMESTAMP: TIMESTAMP,</text><ellipse cx="102" cy="2564.2656" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="207" x="111" y="2570.2607">ZINITIALCOSTBASIS: DECIMAL,</text><ellipse cx="102" cy="2580.5625" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="169" x="111" y="2586.5576">ZINITIALUNITS: DECIMAL,</text><ellipse cx="102" cy="2596.8594" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="215" x="111" y="2602.8545">ZLATESTCOSTBASIS: DECIMAL,</text><ellipse cx="102" cy="2613.1563" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="177" x="111" y="2619.1514">ZLATESTUNITS: DECIMAL,</text><ellipse cx="102" cy="2629.4531" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="187" x="111" y="2635.4482">ZDATASOURCE: VARCHAR,</text><ellipse cx="102" cy="2645.75" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="125" x="111" y="2651.7451">ZGUID: VARCHAR,</text><ellipse cx="102" cy="2662.0469" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="138" x="111" y="2668.042">ZSYNCID: VARCHAR</text><line style="stroke:#181818;stroke-width:0.5;" x1="92" x2="409" y1="2675.3438" y2="2675.3438"/></g><!--MD5=[f8fc6867c910e2fdb69ea3843f449e3a]
+class ZLOTMOD--><g id="elem_ZLOTMOD"><rect codeLine="141" fill="#F1F1F1" height="406.5313" id="ZLOTMOD" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="307" x="97" y="2743"/><ellipse cx="210.75" cy="2759" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M214.8594,2765 L207.1406,2765 L207.1406,2752.6094 L214.8594,2752.6094 L214.8594,2754.7656 L209.5938,2754.7656 L209.5938,2757.4375 L214.3594,2757.4375 L214.3594,2759.5938 L209.5938,2759.5938 L209.5938,2762.8438 L214.8594,2762.8438 L214.8594,2765 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="71" x="231.25" y="2763.8467">ZLOTMOD</text><line style="stroke:#181818;stroke-width:0.5;" x1="98" x2="403" y1="2775" y2="2775"/><ellipse cx="108" cy="2786" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="105" x="117" y="2791.9951">Z_PK: INTEGER</text><ellipse cx="108" cy="2802.2969" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="115" x="117" y="2808.292">Z_ENT: INTEGER</text><ellipse cx="108" cy="2818.5938" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="117" y="2824.5889">Z_OPT: INTEGER</text><ellipse cx="108" cy="2834.8906" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="199" x="117" y="2840.8857">ZDELETIONCOUNT: INTEGER</text><ellipse cx="108" cy="2851.1875" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="156" x="117" y="2857.1826">ZQUICKENID: INTEGER</text><ellipse cx="108" cy="2867.4844" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="156" x="117" y="2873.4795">ZTERMTYPE: INTEGER</text><ellipse cx="108" cy="2883.7813" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="255" x="117" y="2889.7764">ZTRANSACTIONQUICKENID: INTEGER</text><ellipse cx="108" cy="2900.0781" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="107" x="117" y="2906.0732">ZLOT: INTEGER</text><ellipse cx="108" cy="2916.375" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="198" x="117" y="2922.3701">ZLOTASSIGNMENT: INTEGER</text><ellipse cx="108" cy="2932.6719" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="179" x="117" y="2938.667">ZTRANSACTION: INTEGER</text><ellipse cx="108" cy="2948.9688" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="252" x="117" y="2954.9639">ZCREATIONTIMESTAMP: TIMESTAMP</text><ellipse cx="108" cy="2965.2656" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="281" x="117" y="2971.2607">ZMODIFICATIONTIMESTAMP: TIMESTAMP</text><ellipse cx="108" cy="2981.5625" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="237" x="117" y="2987.5576">ZTRANSACTIONDATE: TIMESTAMP</text><ellipse cx="108" cy="2997.8594" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="204" x="117" y="3003.8545">ZAFTERCOSTBASIS: DECIMAL</text><ellipse cx="108" cy="3014.1563" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="269" x="117" y="3020.1514">ZAFTERPOSITIONCOSTBASIS: DECIMAL</text><ellipse cx="108" cy="3030.4531" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="222" x="117" y="3036.4482">ZAFTERPOSITIONUNITSDECIMAL</text><ellipse cx="108" cy="3046.75" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="166" x="117" y="3052.7451">ZAFTERUNITS: DECIMAL</text><ellipse cx="108" cy="3063.0469" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="216" x="117" y="3069.042">ZBEFORECOSTBASIS: DECIMAL</text><ellipse cx="108" cy="3079.3438" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="178" x="117" y="3085.3389">ZBEFOREUNITS: DECIMAL</text><ellipse cx="108" cy="3095.6406" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="183" x="117" y="3101.6357">ZDATASOURCE: VARCHAR</text><ellipse cx="108" cy="3111.9375" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="121" x="117" y="3117.9326">ZGUID: VARCHAR</text><ellipse cx="108" cy="3128.2344" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="138" x="117" y="3134.2295">ZSYNCID: VARCHAR</text><line style="stroke:#181818;stroke-width:0.5;" x1="98" x2="403" y1="3141.5313" y2="3141.5313"/></g><!--MD5=[3018917f34ff3193c466958b31b91578]
+class ZPOSITION--><g id="elem_ZPOSITION"><rect codeLine="166" fill="#F1F1F1" height="308.75" id="ZPOSITION" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="307" x="97" y="1973"/><ellipse cx="208.75" cy="1989" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M212.8594,1995 L205.1406,1995 L205.1406,1982.6094 L212.8594,1982.6094 L212.8594,1984.7656 L207.5938,1984.7656 L207.5938,1987.4375 L212.3594,1987.4375 L212.3594,1989.5938 L207.5938,1989.5938 L207.5938,1992.8438 L212.8594,1992.8438 L212.8594,1995 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="75" x="229.25" y="1993.8467">ZPOSITION</text><line style="stroke:#181818;stroke-width:0.5;" x1="98" x2="403" y1="2005" y2="2005"/><ellipse cx="108" cy="2016" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="105" x="117" y="2021.9951">Z_PK: INTEGER</text><ellipse cx="108" cy="2032.2969" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="115" x="117" y="2038.292">Z_ENT: INTEGER</text><ellipse cx="108" cy="2048.5938" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="117" y="2054.5889">Z_OPT: INTEGER</text><ellipse cx="108" cy="2064.8906" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="241" x="117" y="2070.8857">ZCOSTBASISALGORITHM: INTEGER</text><ellipse cx="108" cy="2081.1875" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="199" x="117" y="2087.1826">ZDELETIONCOUNT: INTEGER</text><ellipse cx="108" cy="2097.4844" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="156" x="117" y="2103.4795">ZQUICKENID: INTEGER</text><ellipse cx="108" cy="2113.7813" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="117" y="2119.7764">ZTYPE: INTEGER</text><ellipse cx="108" cy="2130.0781" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="149" x="117" y="2136.0732">ZACCOUNT: INTEGER</text><ellipse cx="108" cy="2146.375" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="149" x="117" y="2152.3701">ZSECURITY: INTEGER</text><ellipse cx="108" cy="2162.6719" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="252" x="117" y="2168.667">ZCREATIONTIMESTAMP: TIMESTAMP</text><ellipse cx="108" cy="2178.9688" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="281" x="117" y="2184.9639">ZMODIFICATIONTIMESTAMP: TIMESTAMP</text><ellipse cx="108" cy="2195.2656" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="183" x="117" y="2201.2607">ZDATASOURCE: VARCHAR</text><ellipse cx="108" cy="2211.5625" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="121" x="117" y="2217.5576">ZGUID: VARCHAR</text><ellipse cx="108" cy="2227.8594" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="138" x="117" y="2233.8545">ZSYNCID: VARCHAR</text><ellipse cx="108" cy="2244.1563" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="153" x="117" y="2250.1514">ZUNIQUEID: VARCHAR</text><ellipse cx="108" cy="2260.4531" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="189" x="117" y="2266.4482">ZUNIQUEIDTYPE: VARCHAR</text><line style="stroke:#181818;stroke-width:0.5;" x1="98" x2="403" y1="2273.75" y2="2273.75"/></g><!--MD5=[e25671fa0ed89ff4842f04838fb17a3b]
+class ZTRANSACTION--><g id="elem_ZTRANSACTION"><rect codeLine="185" fill="#F1F1F1" height="1368.0469" id="ZTRANSACTION" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="562" x="529.5" y="276"/><ellipse cx="751.75" cy="292" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M755.8594,298 L748.1406,298 L748.1406,285.6094 L755.8594,285.6094 L755.8594,287.7656 L750.5938,287.7656 L750.5938,290.4375 L755.3594,290.4375 L755.3594,292.5938 L750.5938,292.5938 L750.5938,295.8438 L755.8594,295.8438 L755.8594,298 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="109" x="772.25" y="296.8467">ZTRANSACTION</text><line style="stroke:#181818;stroke-width:0.5;" x1="530.5" x2="1090.5" y1="308" y2="308"/><ellipse cx="540.5" cy="319" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="199" x="549.5" y="324.9951">Z_PK: INTEGER «generated»</text><ellipse cx="540.5" cy="335.2969" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="115" x="549.5" y="341.292">Z_ENT: INTEGER</text><ellipse cx="540.5" cy="351.5938" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="549.5" y="357.5889">Z_OPT: INTEGER</text><ellipse cx="540.5" cy="367.8906" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="199" x="549.5" y="373.8857">ZDELETIONCOUNT: INTEGER</text><ellipse cx="540.5" cy="384.1875" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="253" x="549.5" y="390.1826">ZEXCLUDEFROMREPORTS: INTEGER</text><ellipse cx="540.5" cy="400.4844" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="302" x="549.5" y="406.4795">ZIGNORETHISCASHTRANSACTION: INTEGER</text><ellipse cx="540.5" cy="416.7813" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="159" x="549.5" y="422.7764">ZIMPORTQID: INTEGER</text><ellipse cx="540.5" cy="433.0781" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="137" x="549.5" y="439.0732">ZLOCKED: INTEGER</text><ellipse cx="540.5" cy="449.375" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="150" x="549.5" y="455.3701">ZMATCHED: INTEGER</text><ellipse cx="540.5" cy="465.6719" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="144" x="549.5" y="471.667">ZONLINEID: INTEGER</text><ellipse cx="540.5" cy="481.9688" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="145" x="549.5" y="487.9639">ZORDERID: INTEGER</text><ellipse cx="540.5" cy="498.2656" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="156" x="549.5" y="504.2607">ZQUICKENID: INTEGER</text><ellipse cx="540.5" cy="514.5625" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="214" x="549.5" y="520.5576">ZRECONCILESTATUS: INTEGER</text><ellipse cx="540.5" cy="530.8594" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="549.5" y="536.8545">ZTYPE: INTEGER</text><ellipse cx="540.5" cy="547.1563" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="245" x="549.5" y="553.1514">ZUSERSTATUSOVERRIDE: INTEGER</text><ellipse cx="540.5" cy="563.4531" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="164" x="549.5" y="569.4482">ZACCOUNT: INTEGER</text><ellipse cx="540.5" cy="579.75" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="223" x="549.5" y="585.7451">ZDOWNLOADSESSION: INTEGER</text><ellipse cx="540.5" cy="596.0469" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="130" x="549.5" y="602.042">ZERROR: INTEGER</text><ellipse cx="540.5" cy="612.3438" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="190" x="549.5" y="618.3389">ZFITRANSACTION: INTEGER</text><ellipse cx="540.5" cy="628.6406" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="251" x="549.5" y="634.6357">ZPLACEHOLDERACCOUNT: INTEGER</text><ellipse cx="540.5" cy="644.9375" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="269" x="549.5" y="650.9326">ZRECONCILEDTRANSACTION: INTEGER</text><ellipse cx="540.5" cy="661.2344" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="229" x="549.5" y="667.2295">ZRENAMINGRULEUSED: INTEGER</text><ellipse cx="540.5" cy="677.5313" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="188" x="549.5" y="683.5264">ZSENDACCOUNT: INTEGER</text><ellipse cx="540.5" cy="693.8281" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="206" x="549.5" y="699.8232">ZTARGETACCOUNT: INTEGER</text><ellipse cx="540.5" cy="710.125" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="115" x="549.5" y="716.1201">ZFLAG: INTEGER</text><ellipse cx="540.5" cy="726.4219" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="367" x="549.5" y="732.417">ZMACHINEGENERATEDCATEGORYSOURCE: INTEGER</text><ellipse cx="540.5" cy="742.7188" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="334" x="549.5" y="748.7139">ZMACHINEGENERATEDPAYEESOURCE: INTEGER</text><ellipse cx="540.5" cy="759.0156" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="318" x="549.5" y="765.0107">ZMACHINEGENERATEDTAGSOURCE: INTEGER</text><ellipse cx="540.5" cy="775.3125" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="158" x="549.5" y="781.3076">ZMISCFLAGS: INTEGER</text><ellipse cx="540.5" cy="791.6094" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="231" x="549.5" y="797.6045">ZSENDREQUESTSTATE: INTEGER</text><ellipse cx="540.5" cy="807.9063" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="440" x="549.5" y="813.9014">ZSOURCESMARTCASHFLOWTRANSACTIONQUICKENID: INTEGER</text><ellipse cx="540.5" cy="824.2031" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="132" x="549.5" y="830.1982">ZACTION: INTEGER</text><ellipse cx="540.5" cy="840.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="203" x="549.5" y="846.4951">ZCHECKPAYCHECK: INTEGER</text><ellipse cx="540.5" cy="856.7969" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="217" x="549.5" y="862.792">ZQUICKPAYPAYMENT: INTEGER</text><ellipse cx="540.5" cy="873.0938" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="163" x="549.5" y="879.0889">ZUSERPAYEE: INTEGER</text><ellipse cx="540.5" cy="889.3906" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="157" x="549.5" y="895.3857">ZAUTOPOST: INTEGER</text><ellipse cx="540.5" cy="905.6875" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="156" x="549.5" y="911.6826">ZTOBESENT: INTEGER</text><ellipse cx="540.5" cy="921.9844" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="186" x="549.5" y="927.9795">ZLOANACCOUNT: INTEGER</text><ellipse cx="540.5" cy="938.2813" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="241" x="549.5" y="944.2764">ZCOSTBASISALGORITHM: INTEGER</text><ellipse cx="540.5" cy="954.5781" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="164" x="549.5" y="960.5732">ZTAXEXEMPT: INTEGER</text><ellipse cx="540.5" cy="970.875" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="203" x="549.5" y="976.8701">ZPOSITION: INTEGER «FK»</text><ellipse cx="540.5" cy="987.1719" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="252" x="549.5" y="993.167">ZCREATIONTIMESTAMP: TIMESTAMP</text><ellipse cx="540.5" cy="1003.4688" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="205" x="549.5" y="1009.4639">ZENTEREDDATE: TIMESTAMP</text><ellipse cx="540.5" cy="1019.7656" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="281" x="549.5" y="1025.7607">ZMODIFICATIONTIMESTAMP: TIMESTAMP</text><ellipse cx="540.5" cy="1036.0625" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="297" x="549.5" y="1042.0576">ZPLACEHOLDERTARGETDATE: TIMESTAMP</text><ellipse cx="540.5" cy="1052.3594" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="196" x="549.5" y="1058.3545">ZPOSTEDDATE: TIMESTAMP</text><ellipse cx="540.5" cy="1068.6563" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="200" x="549.5" y="1074.6514">ZBUDGETFLEXIBILITY: FLOAT</text><ellipse cx="540.5" cy="1084.9531" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="329" x="549.5" y="1090.9482">ZSENTTRANSACTIONSTATUSDATE: TIMESTAMP</text><ellipse cx="540.5" cy="1101.25" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="536" x="549.5" y="1107.2451">ZSOURCESMARTCASHFLOWTRANSACTIONORIGINALMODELDATE: TIMESTAMP</text><ellipse cx="540.5" cy="1117.5469" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="226" x="549.5" y="1123.542">ZACQUISITIONDATE: TIMESTAMP</text><ellipse cx="540.5" cy="1133.8438" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="158" x="549.5" y="1139.8389">ZAMOUNT: DECIMAL</text><ellipse cx="540.5" cy="1150.1406" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="303" x="549.5" y="1156.1357">ZPLACEHOLDERTARGETBALANCE: DECIMAL</text><ellipse cx="540.5" cy="1166.4375" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="170" x="549.5" y="1172.4326">ZCOMMISSION: DECIMAL</text><ellipse cx="540.5" cy="1182.7344" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="159" x="549.5" y="1188.7295">ZCOSTBASIS: DECIMAL</text><ellipse cx="540.5" cy="1199.0313" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="185" x="549.5" y="1205.0264">ZDENOMINATOR: DECIMAL</text><ellipse cx="540.5" cy="1215.3281" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="170" x="549.5" y="1221.3232">ZNUMERATOR: DECIMAL</text><ellipse cx="540.5" cy="1231.625" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="261" x="549.5" y="1237.6201">ZPLACEHOLDERCOSTBASIS: DECIMAL</text><ellipse cx="540.5" cy="1247.9219" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="302" x="549.5" y="1253.917">ZPLACEHOLDERCOSTBASISUNITS: DECIMAL</text><ellipse cx="540.5" cy="1264.2188" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="280" x="549.5" y="1270.2139">ZPLACEHOLDERTARGETUNITS: DECIMAL</text><ellipse cx="540.5" cy="1280.5156" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="339" x="549.5" y="1286.5107">ZPLACEHOLDERUNITSONTARGETDATE: DECIMAL</text><ellipse cx="540.5" cy="1296.8125" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="121" x="549.5" y="1302.8076">ZUNITS: DECIMAL</text><ellipse cx="540.5" cy="1313.1094" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="183" x="549.5" y="1319.1045">ZDATASOURCE: VARCHAR</text><ellipse cx="540.5" cy="1329.4063" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="136" x="549.5" y="1335.4014">ZFINOTE: VARCHAR</text><ellipse cx="540.5" cy="1345.7031" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="121" x="549.5" y="1351.6982">ZGUID: VARCHAR</text><ellipse cx="540.5" cy="1362" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="240" x="549.5" y="1367.9951">ZIMPORTSOURCEFILEID: VARCHAR</text><ellipse cx="540.5" cy="1378.2969" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="213" x="549.5" y="1384.292">ZIMPORTSOURCEID: VARCHAR</text><ellipse cx="540.5" cy="1394.5938" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="195" x="549.5" y="1400.5889">ZMATCHSOURCE: VARCHAR</text><ellipse cx="540.5" cy="1410.8906" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="125" x="549.5" y="1416.8857">ZNOTE: VARCHAR</text><ellipse cx="540.5" cy="1427.1875" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="268" x="549.5" y="1433.1826">ZONLINEBANKINGSERVERID: VARCHAR</text><ellipse cx="540.5" cy="1443.4844" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="285" x="549.5" y="1449.4795">ZPREMATCHPROPERTIESJSON: VARCHAR</text><ellipse cx="540.5" cy="1459.7813" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="170" x="549.5" y="1465.7764">ZREFERENCE: VARCHAR</text><ellipse cx="540.5" cy="1476.0781" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="138" x="549.5" y="1482.0732">ZSYNCID: VARCHAR</text><ellipse cx="540.5" cy="1492.375" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="195" x="549.5" y="1498.3701">ZCHECKNUMBER: VARCHAR</text><ellipse cx="540.5" cy="1508.6719" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="255" x="549.5" y="1514.667">ZCHECKPROPERTIESJSON: VARCHAR</text><ellipse cx="540.5" cy="1524.9688" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="328" x="549.5" y="1530.9639">ZCLIENTASSIGNEDTRANSACTIONUID: VARCHAR</text><ellipse cx="540.5" cy="1541.2656" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="201" x="549.5" y="1547.2607">ZOFXPAYEELISTID: VARCHAR</text><ellipse cx="540.5" cy="1557.5625" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="216" x="549.5" y="1563.5576">ZRECURRENCEJSON: VARCHAR</text><ellipse cx="540.5" cy="1573.8594" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="127" x="549.5" y="1579.8545">ZLOCATION: BLOB</text><ellipse cx="540.5" cy="1590.1563" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="223" x="549.5" y="1596.1514">ZPREMATCHPROPERTIES: BLOB</text><ellipse cx="540.5" cy="1606.4531" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="193" x="549.5" y="1612.4482">ZCHECKPROPERTIES: BLOB</text><ellipse cx="540.5" cy="1622.75" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="184" x="549.5" y="1628.7451">ZRECURRENCEEND: BLOB</text><line style="stroke:#181818;stroke-width:0.5;" x1="530.5" x2="1090.5" y1="1636.0469" y2="1636.0469"/></g><!--MD5=[0b4b9b2953159032c9ab88b13e61c57c]
+class ZFIPOSITION--><g id="elem_ZFIPOSITION"><rect codeLine="269" fill="#F1F1F1" height="699.875" id="ZFIPOSITION" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="406" x="1126.5" y="610"/><ellipse cx="1282.25" cy="626" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1286.3594,632 L1278.6406,632 L1278.6406,619.6094 L1286.3594,619.6094 L1286.3594,621.7656 L1281.0938,621.7656 L1281.0938,624.4375 L1285.8594,624.4375 L1285.8594,626.5938 L1281.0938,626.5938 L1281.0938,629.8438 L1286.3594,629.8438 L1286.3594,632 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="86" x="1302.75" y="630.8467">ZFIPOSITION</text><line style="stroke:#181818;stroke-width:0.5;" x1="1127.5" x2="1531.5" y1="642" y2="642"/><ellipse cx="1137.5" cy="653" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="105" x="1146.5" y="658.9951">Z_PK: INTEGER</text><ellipse cx="1137.5" cy="669.2969" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="115" x="1146.5" y="675.292">Z_ENT: INTEGER</text><ellipse cx="1137.5" cy="685.5938" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="1146.5" y="691.5889">Z_OPT: INTEGER</text><ellipse cx="1137.5" cy="701.8906" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="199" x="1146.5" y="707.8857">ZDELETIONCOUNT: INTEGER</text><ellipse cx="1137.5" cy="718.1875" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="156" x="1146.5" y="724.1826">ZQUICKENID: INTEGER</text><ellipse cx="1137.5" cy="734.4844" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="185" x="1146.5" y="740.4795">ZSECURITYTYPE: INTEGER</text><ellipse cx="1137.5" cy="750.7813" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="176" x="1146.5" y="756.7764">ZFISTATEMENT: INTEGER</text><ellipse cx="1137.5" cy="767.0781" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="270" x="1146.5" y="773.0732">ZCOUPONMATURITYDATE: TIMESTAMP</text><ellipse cx="1137.5" cy="783.375" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="252" x="1146.5" y="789.3701">ZCREATIONTIMESTAMP: TIMESTAMP</text><ellipse cx="1137.5" cy="799.6719" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="248" x="1146.5" y="805.667">ZDEBTMATURITYDATE: TIMESTAMP</text><ellipse cx="1137.5" cy="815.9688" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="187" x="1146.5" y="821.9639">ZEXPIREDATE: TIMESTAMP</text><ellipse cx="1137.5" cy="832.2656" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="281" x="1146.5" y="838.2607">ZMODIFICATIONTIMESTAMP: TIMESTAMP</text><ellipse cx="1137.5" cy="848.5625" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="380" x="1146.5" y="854.5576">ZASSETCLASSPERCENTAGEDOMESTICBOND: DECIMAL</text><ellipse cx="1137.5" cy="864.8594" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="335" x="1146.5" y="870.8545">ZASSETCLASSPERCENTAGEINTLBOND: DECIMAL</text><ellipse cx="1137.5" cy="881.1563" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="341" x="1146.5" y="887.1514">ZASSETCLASSPERCENTAGEINTLSTOCK: DECIMAL</text><ellipse cx="1137.5" cy="897.4531" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="358" x="1146.5" y="903.4482">ZASSETCLASSPERCENTAGELARGESTOCK: DECIMAL</text><ellipse cx="1137.5" cy="913.75" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="355" x="1146.5" y="919.7451">ZASSETCLASSPERCENTAGEMONEYMRKT: DECIMAL</text><ellipse cx="1137.5" cy="930.0469" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="313" x="1146.5" y="936.042">ZASSETCLASSPERCENTAGEOTHER: DECIMAL</text><ellipse cx="1137.5" cy="946.3438" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="356" x="1146.5" y="952.3389">ZASSETCLASSPERCENTAGESMALLSTOCK: DECIMAL</text><ellipse cx="1137.5" cy="962.6406" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="178" x="1146.5" y="968.6357">ZCOUPONRATE: DECIMAL</text><ellipse cx="1137.5" cy="978.9375" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="182" x="1146.5" y="984.9326">ZMARKETVALUE: DECIMAL</text><ellipse cx="1137.5" cy="995.2344" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="222" x="1146.5" y="1001.2295">ZSECURITYUNITPRICE: DECIMAL</text><ellipse cx="1137.5" cy="1011.5313" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="242" x="1146.5" y="1017.5264">ZSHARESPERCONTRACT: DECIMAL</text><ellipse cx="1137.5" cy="1027.8281" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="170" x="1146.5" y="1033.8232">ZSTRIKEPRICE: DECIMAL</text><ellipse cx="1137.5" cy="1044.125" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="153" x="1146.5" y="1050.1201">ZUNITPRICE: DECIMAL</text><ellipse cx="1137.5" cy="1060.4219" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="121" x="1146.5" y="1066.417">ZUNITS: DECIMAL</text><ellipse cx="1137.5" cy="1076.7188" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="175" x="1146.5" y="1082.7139">ZASSETCLASS: VARCHAR</text><ellipse cx="1137.5" cy="1093.0156" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="183" x="1146.5" y="1099.0107">ZDATASOURCE: VARCHAR</text><ellipse cx="1137.5" cy="1109.3125" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="121" x="1146.5" y="1115.3076">ZGUID: VARCHAR</text><ellipse cx="1137.5" cy="1125.6094" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="162" x="1146.5" y="1131.6045">ZISSUETYPE: VARCHAR</text><ellipse cx="1137.5" cy="1141.9063" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="130" x="1146.5" y="1147.9014">ZMEMO: VARCHAR</text><ellipse cx="1137.5" cy="1158.2031" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="175" x="1146.5" y="1164.1982">ZOPTIONTYPE: VARCHAR</text><ellipse cx="1137.5" cy="1174.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="1146.5" y="1180.4951">ZPOSTYPE: VARCHAR</text><ellipse cx="1137.5" cy="1190.7969" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="199" x="1146.5" y="1196.792">ZSECURITYMEMO: VARCHAR</text><ellipse cx="1137.5" cy="1207.0938" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="195" x="1146.5" y="1213.0889">ZSECURITYNAME: VARCHAR</text><ellipse cx="1137.5" cy="1223.3906" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="205" x="1146.5" y="1229.3857">ZSECURITYTICKER: VARCHAR</text><ellipse cx="1137.5" cy="1239.6875" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="285" x="1146.5" y="1245.6826">ZSECURITYTYPEDESCRIPTION: VARCHAR</text><ellipse cx="1137.5" cy="1255.9844" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="138" x="1146.5" y="1261.9795">ZSYNCID: VARCHAR</text><ellipse cx="1137.5" cy="1272.2813" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="153" x="1146.5" y="1278.2764">ZUNIQUEID: VARCHAR</text><ellipse cx="1137.5" cy="1288.5781" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="189" x="1146.5" y="1294.5732">ZUNIQUEIDTYPE: VARCHAR</text><line style="stroke:#181818;stroke-width:0.5;" x1="1127.5" x2="1531.5" y1="1301.875" y2="1301.875"/></g><!--MD5=[ac75954b54854dc817a11d2820649093]
+link ZACCOUNT to ZPOSITION--><g id="link_ZACCOUNT_ZPOSITION"><path codeLine="312" d="M250.5,1921.42 C250.5,1936.51 250.5,1951.01 250.5,1964.83 " fill="none" id="ZACCOUNT-ZPOSITION" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="250.5" x2="256.5" y1="1964.89" y2="1972.89"/><line style="stroke:#181818;stroke-width:1.0;" x1="250.5" x2="244.5" y1="1964.89" y2="1972.89"/><line style="stroke:#181818;stroke-width:1.0;" x1="250.5" x2="250.5" y1="1964.89" y2="1972.89"/><ellipse cx="250.5" cy="1958.89" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="246.5" x2="254.5" y1="1917.07" y2="1917.07"/><line style="stroke:#181818;stroke-width:1.0;" x1="246.5" x2="254.5" y1="1920.07" y2="1920.07"/><line style="stroke:#181818;stroke-width:1.0;" x1="250.5" x2="250.5" y1="1921.07" y2="1913.07"/></g><!--MD5=[5ae705a89a26242d4a83121ed256abc3]
+link ZPOSITION to ZLOT--><g id="link_ZPOSITION_ZLOT"><path codeLine="313" d="M250.5,2290.4 C250.5,2304.76 250.5,2319.35 250.5,2333.83 " fill="none" id="ZPOSITION-ZLOT" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="250.5" x2="256.5" y1="2333.87" y2="2341.87"/><line style="stroke:#181818;stroke-width:1.0;" x1="250.5" x2="244.5" y1="2333.87" y2="2341.87"/><line style="stroke:#181818;stroke-width:1.0;" x1="250.5" x2="250.5" y1="2333.87" y2="2341.87"/><line style="stroke:#181818;stroke-width:1.0;" x1="254.5" x2="246.5" y1="2331.87" y2="2331.87"/><line style="stroke:#181818;stroke-width:1.0;" x1="246.5" x2="254.5" y1="2286.07" y2="2286.07"/><line style="stroke:#181818;stroke-width:1.0;" x1="246.5" x2="254.5" y1="2289.07" y2="2289.07"/><line style="stroke:#181818;stroke-width:1.0;" x1="250.5" x2="250.5" y1="2290.07" y2="2282.07"/></g><!--MD5=[9155b521861d937f8592044f245c7b18]
+link ZLOT to ZLOTMOD--><g id="link_ZLOT_ZLOTMOD"><path codeLine="314" d="M250.5,2691.56 C250.5,2705.79 250.5,2720.25 250.5,2734.67 " fill="none" id="ZLOT-ZLOTMOD" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="250.5" x2="256.5" y1="2734.68" y2="2742.68"/><line style="stroke:#181818;stroke-width:1.0;" x1="250.5" x2="244.5" y1="2734.68" y2="2742.68"/><line style="stroke:#181818;stroke-width:1.0;" x1="250.5" x2="250.5" y1="2734.68" y2="2742.68"/><ellipse cx="250.5" cy="2728.68" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="246.5" x2="254.5" y1="2687.31" y2="2687.31"/><line style="stroke:#181818;stroke-width:1.0;" x1="246.5" x2="254.5" y1="2690.31" y2="2690.31"/><line style="stroke:#181818;stroke-width:1.0;" x1="250.5" x2="250.5" y1="2691.31" y2="2683.31"/></g><!--MD5=[08f975e803574271629c91000cae1207]
+@startuml Desired ERM
+' skinparam linetype ortho
+
+entity "ZACCOUNT" {
+  * Z_PK: INTEGER
+  * Z_ENT: INTEGER
+  * Z_OPT: INTEGER
+  * ZACTIVE: INTEGER
+  * ZCANDIDATENOCASHTRANSACTIONS: INTEGER
+  * ZCANDIDATESINGLEMUTUALFUND: INTEGER
+  * ZCLOSED: INTEGER
+  * ZCONFIRMATIONNEEDED: INTEGER
+  * ZCOSTBASISALGORITHMDEBT: INTEGER
+  * ZCOSTBASISALGORITHMMUTUALFUND: INTEGER
+  * ZCOSTBASISALGORITHMOPTION: INTEGER
+  * ZCOSTBASISALGORITHMOTHER: INTEGER
+  * ZCOSTBASISALGORITHMSTOCK: INTEGER
+  * ZDELETIONCOUNT: INTEGER
+  * ZIMPORTQID: INTEGER
+  * ZLASTCHECKNUM: INTEGER
+  * ZLIQUIDITY: INTEGER
+  * ZLOANCOMPOUNDINGPERIOD: INTEGER
+  * ZLOANHASBEENSETUP: INTEGER
+  * ZLOANHASOFFEREDTOCONVERTLIABILITY: INTEGER
+  * ZLOANPAYMENTFREQUENCY: INTEGER
+  * ZLOANPAYMENTPERIOD: INTEGER
+  * ZLOANRATETYPE: INTEGER
+  * ZLOANTERMTYPE: INTEGER
+  * ZLOANUSEMATURITYDATE: INTEGER
+  * ZMOSTRECENTDOWNLOADSESSIONNUMBER: INTEGER
+  * ZNOCASHTRANSACTIONS: INTEGER
+  * ZOFXPAYMENTSENABLED: INTEGER
+  * ZOFXTRANSFERDESTENABLED: INTEGER
+  * ZOFXTRANSFERSOURCEENABLED: INTEGER
+  * ZONLINEBANKINGACCOUNTINFOSESSIONNEEDED: INTEGER
+  * ZONLINEBANKINGACCOUNTISENABLED: INTEGER
+  * ZONLINEBANKINGACCOUNTISINBIDCHANGE: INTEGER
+  * ZONLINEBANKINGAWAITINGINITIALDOWNLOAD: INTEGER
+  * ZONLINEBANKINGCHANGEPINFIRSTCOMPLETED: INTEGER
+  * ZQUICKENID: INTEGER
+  * ZSCHEDULELOOKAHEADVALUE: INTEGER
+  * ZSIMPLEINVESTING: INTEGER
+  * ZSINGLEMUTUALFUND: INTEGER
+  * ZSTATUSNUMATTEMPTS: INTEGER
+  * ZSTATUSTRANSACTIONCOUNT: INTEGER
+  * ZSYNCRESETREQUIRED: INTEGER
+  * ZSYNCWITHCLOUD: INTEGER
+  * ZTAXABLE: INTEGER
+  * ZUSEDINAUTOUPDATES: INTEGER
+  * ZUSEDINREPORTS: INTEGER
+  * ZBILLPAYPAYMENTACCOUNT: INTEGER
+  * ZBILLPAYPROVIDERINSTITUTION: INTEGER
+  * ZCLOUDFILOGIN: INTEGER
+  * ZERROR: INTEGER
+  * ZFINANCIALINSTITUTION: INTEGER
+  * ZLOANINTERESTCATEGORY: INTEGER
+  * ZLOANSMARTTRANSACTION: INTEGER
+  * ZCLOSEDDATE: TIMESTAMP
+  * ZCREATIONTIMESTAMP: TIMESTAMP
+  * ZLOANFIRSTPAYMENTDATE: TIMESTAMP
+  * ZLOANNEXTPAYMENTDATE: TIMESTAMP
+  * ZMODIFICATIONTIMESTAMP: TIMESTAMP
+  * ZONLINEBANKINGLASTCONNECTEDTIMESTAMP: TIMESTAMP
+  * ZONLINEBANKINGLEDGERBALANCEDATE: TIMESTAMP
+  * ZREVIEWEDTIMESTAMP: TIMESTAMP
+  * ZCREDITLIMIT: DECIMAL
+  * ZINTERESTRATE: DECIMAL
+  * ZLOANOPENINGBALANCE: DECIMAL
+  * ZLOANTERM: DECIMAL
+  * ZONLINEBANKINGLEDGERBALANCEAMOUNT: DECIMAL
+  * ZBANKROUTINGNUMBER: VARCHAR
+  * ZBILLPAYROUTINGNUMBER: VARCHAR
+  * ZCHECKPRINTINGPROPERTIESJSON: VARCHAR
+  * ZCURRENCY: VARCHAR
+  * ZDATASOURCE: VARCHAR
+  * ZFILTERSJSON: VARCHAR
+  * ZGUID: VARCHAR
+  * ZIMPORTSOURCEFILEID: VARCHAR
+  * ZIMPORTSOURCEID: VARCHAR
+  * ZNAME: VARCHAR
+  * ZNOTES: VARCHAR
+  * ZNOTIFICATIONSJSON: VARCHAR
+  * ZOFXBILLPAYSERVICESTATUS: VARCHAR
+  * ZOFXLASTBANKMAILTOKEN: VARCHAR
+  * ZOFXLASTPAYMENTTOKEN: VARCHAR
+  * ZOFXLASTTRANSFERTOKEN: VARCHAR
+  * ZONLINEBANKINGACCOUNTNUMBER: VARCHAR
+  * ZONLINEBANKINGAGGREGATORACCOUNTID: VARCHAR
+  * ZONLINEBANKINGCONNECTIONTYPE: VARCHAR
+  * ZONLINEBANKINGCUSTOMERID: VARCHAR
+  * ZONLINEBANKINGDTEND: VARCHAR
+  * ZONLINEBANKINGLASTTOKEN: VARCHAR
+  * ZONLINEBANKINGLASTUUID: VARCHAR
+  * ZONLINEBANKINGOFXACCOUNTTYPE: VARCHAR
+  * ZONLINEBANKINGPREVIOUSBID: VARCHAR
+  * ZONLINEBANKINGSERVERID: VARCHAR
+  * ZONLINEBILLPAYACCOUNTNUMBER: VARCHAR
+  * ZONLINEBILLPAYCONNECTIONTYPE: VARCHAR
+  * ZONLINEBILLPAYCUSTOMERID: VARCHAR
+  * ZONLINEBILLPAYOFXACCOUNTTYPE: VARCHAR
+  * ZRECONCILEINFOJSON: VARCHAR
+  * ZREGIONCODE: VARCHAR
+  * ZSCHEDULELOOKAHEADUNITTYPE: VARCHAR
+  * ZSYNCID: VARCHAR
+  * ZTYPENAME: VARCHAR
+  * ZUSERDESCRIPTION: VARCHAR
+  * ZCHECKPRINTINGPROPERTIES: BLOB
+  * ZFILTERS: BLOB
+  * ZNOTIFICATIONS: BLOB
+  * ZRECONCILEINFO: BLOB
+  * ZANOMALOUSSYNCSTATUS: BLOB
+  * ZONLINEBANKINGACCOUNTNUMBERMASKED: VARCHAR
+  * ZONLINEBANKINGAGGREGATIONPENDINGENABLEMENTINFO: BLOB
+  * ZONLINEBANKINGAGGREGATIONENABLEMENTCOUNT: INTEGER
+  * ZONLINEBANKINGAGGREGATIONDISABLEMENTCOUNT: INTEGER
+  * ZONLINEBANKINGACCOUNTDESCRIPTION: VARCHAR
+  * ZAUTORECONCILE: INTEGER
+  * ZQ17SYNCID: VARCHAR
+  }
+
+entity "ZLOT" {
+  * Z_PK: INTEGER PRIMARY KEY, 
+  * Z_ENT: INTEGER, 
+  * Z_OPT: INTEGER, 
+  * ZDELETIONCOUNT: INTEGER, 
+  * ZQUICKENID: INTEGER, 
+  * ZPOSITION: INTEGER, 
+  * ZACQUISITIONDATE: TIMESTAMP, 
+  * ZCREATIONTIMESTAMP: TIMESTAMP, 
+  * ZINITIALTRANSACTIONDATE: TIMESTAMP, 
+  * ZLATESTTRANSACTIONDATE: TIMESTAMP, 
+  * ZMODIFICATIONTIMESTAMP: TIMESTAMP, 
+  * ZINITIALCOSTBASIS: DECIMAL, 
+  * ZINITIALUNITS: DECIMAL, 
+  * ZLATESTCOSTBASIS: DECIMAL, 
+  * ZLATESTUNITS: DECIMAL, 
+  * ZDATASOURCE: VARCHAR, 
+  * ZGUID: VARCHAR, 
+  * ZSYNCID: VARCHAR
+}
+
+entity "ZLOTMOD" {
+  * Z_PK: INTEGER
+  * Z_ENT: INTEGER  
+  * Z_OPT: INTEGER  
+  * ZDELETIONCOUNT: INTEGER  
+  * ZQUICKENID: INTEGER  
+  * ZTERMTYPE: INTEGER  
+  * ZTRANSACTIONQUICKENID: INTEGER  
+  * ZLOT: INTEGER  
+  * ZLOTASSIGNMENT: INTEGER  
+  * ZTRANSACTION: INTEGER  
+  * ZCREATIONTIMESTAMP: TIMESTAMP  
+  * ZMODIFICATIONTIMESTAMP: TIMESTAMP  
+  * ZTRANSACTIONDATE: TIMESTAMP  
+  * ZAFTERCOSTBASIS: DECIMAL  
+  * ZAFTERPOSITIONCOSTBASIS: DECIMAL  
+  * ZAFTERPOSITIONUNITSDECIMAL  
+  * ZAFTERUNITS: DECIMAL  
+  * ZBEFORECOSTBASIS: DECIMAL  
+  * ZBEFOREUNITS: DECIMAL  
+  * ZDATASOURCE: VARCHAR  
+  * ZGUID: VARCHAR
+  * ZSYNCID: VARCHAR
+}
+
+entity "ZPOSITION" {
+  * Z_PK: INTEGER  
+  * Z_ENT: INTEGER  
+  * Z_OPT: INTEGER  
+  * ZCOSTBASISALGORITHM: INTEGER  
+  * ZDELETIONCOUNT: INTEGER  
+  * ZQUICKENID: INTEGER  
+  * ZTYPE: INTEGER  
+  * ZACCOUNT: INTEGER  
+  * ZSECURITY: INTEGER  
+  * ZCREATIONTIMESTAMP: TIMESTAMP  
+  * ZMODIFICATIONTIMESTAMP: TIMESTAMP  
+  * ZDATASOURCE: VARCHAR  
+  * ZGUID: VARCHAR  
+  * ZSYNCID: VARCHAR  
+  * ZUNIQUEID: VARCHAR  
+  * ZUNIQUEIDTYPE: VARCHAR  
+}
+
+entity "ZTRANSACTION" {
+  * Z_PK: INTEGER <<generated>>
+  * Z_ENT: INTEGER
+  * Z_OPT: INTEGER
+  * ZDELETIONCOUNT: INTEGER
+  * ZEXCLUDEFROMREPORTS: INTEGER
+  * ZIGNORETHISCASHTRANSACTION: INTEGER
+  * ZIMPORTQID: INTEGER
+  * ZLOCKED: INTEGER
+  * ZMATCHED: INTEGER
+  * ZONLINEID: INTEGER
+  * ZORDERID: INTEGER
+  * ZQUICKENID: INTEGER
+  * ZRECONCILESTATUS: INTEGER
+  * ZTYPE: INTEGER
+  * ZUSERSTATUSOVERRIDE: INTEGER
+  * **ZACCOUNT: INTEGER**
+  * ZDOWNLOADSESSION: INTEGER
+  * ZERROR: INTEGER
+  * ZFITRANSACTION: INTEGER
+  * ZPLACEHOLDERACCOUNT: INTEGER
+  * ZRECONCILEDTRANSACTION: INTEGER
+  * ZRENAMINGRULEUSED: INTEGER
+  * ZSENDACCOUNT: INTEGER
+  * ZTARGETACCOUNT: INTEGER
+  * ZFLAG: INTEGER
+  * ZMACHINEGENERATEDCATEGORYSOURCE: INTEGER
+  * ZMACHINEGENERATEDPAYEESOURCE: INTEGER
+  * ZMACHINEGENERATEDTAGSOURCE: INTEGER
+  * ZMISCFLAGS: INTEGER
+  * ZSENDREQUESTSTATE: INTEGER
+  * ZSOURCESMARTCASHFLOWTRANSACTIONQUICKENID: INTEGER
+  * ZACTION: INTEGER
+  * ZCHECKPAYCHECK: INTEGER
+  * ZQUICKPAYPAYMENT: INTEGER
+  * ZUSERPAYEE: INTEGER
+  * ZAUTOPOST: INTEGER
+  * ZTOBESENT: INTEGER
+  * ZLOANACCOUNT: INTEGER
+  * ZCOSTBASISALGORITHM: INTEGER
+  * ZTAXEXEMPT: INTEGER
+  * **ZPOSITION: INTEGER <<FK>>**
+  * ZCREATIONTIMESTAMP: TIMESTAMP
+  * ZENTEREDDATE: TIMESTAMP
+  * ZMODIFICATIONTIMESTAMP: TIMESTAMP
+  * ZPLACEHOLDERTARGETDATE: TIMESTAMP
+  * ZPOSTEDDATE: TIMESTAMP
+  * ZBUDGETFLEXIBILITY: FLOAT
+  * ZSENTTRANSACTIONSTATUSDATE: TIMESTAMP
+  * ZSOURCESMARTCASHFLOWTRANSACTIONORIGINALMODELDATE: TIMESTAMP
+  * ZACQUISITIONDATE: TIMESTAMP
+  * **ZAMOUNT: DECIMAL**
+  * ZPLACEHOLDERTARGETBALANCE: DECIMAL
+  * ZCOMMISSION: DECIMAL
+  * ZCOSTBASIS: DECIMAL
+  * ZDENOMINATOR: DECIMAL
+  * ZNUMERATOR: DECIMAL
+  * ZPLACEHOLDERCOSTBASIS: DECIMAL
+  * ZPLACEHOLDERCOSTBASISUNITS: DECIMAL
+  * ZPLACEHOLDERTARGETUNITS: DECIMAL
+  * ZPLACEHOLDERUNITSONTARGETDATE: DECIMAL
+  * ZUNITS: DECIMAL
+  * ZDATASOURCE: VARCHAR
+  * ZFINOTE: VARCHAR
+  * ZGUID: VARCHAR
+  * ZIMPORTSOURCEFILEID: VARCHAR
+  * ZIMPORTSOURCEID: VARCHAR
+  * ZMATCHSOURCE: VARCHAR
+  * ZNOTE: VARCHAR
+  * ZONLINEBANKINGSERVERID: VARCHAR
+  * ZPREMATCHPROPERTIESJSON: VARCHAR
+  * ZREFERENCE: VARCHAR
+  * ZSYNCID: VARCHAR
+  * ZCHECKNUMBER: VARCHAR
+  * ZCHECKPROPERTIESJSON: VARCHAR
+  * ZCLIENTASSIGNEDTRANSACTIONUID: VARCHAR
+  * ZOFXPAYEELISTID: VARCHAR
+  * ZRECURRENCEJSON: VARCHAR
+  * ZLOCATION: BLOB
+  * ZPREMATCHPROPERTIES: BLOB
+  * ZCHECKPROPERTIES: BLOB
+  * ZRECURRENCEEND: BLOB
+}
+
+entity "ZFIPOSITION" {
+  * Z_PK: INTEGER
+  * Z_ENT: INTEGER
+  * Z_OPT: INTEGER
+  * ZDELETIONCOUNT: INTEGER
+  * ZQUICKENID: INTEGER
+  * ZSECURITYTYPE: INTEGER
+  * ZFISTATEMENT: INTEGER
+  * ZCOUPONMATURITYDATE: TIMESTAMP
+  * ZCREATIONTIMESTAMP: TIMESTAMP
+  * ZDEBTMATURITYDATE: TIMESTAMP
+  * ZEXPIREDATE: TIMESTAMP
+  * ZMODIFICATIONTIMESTAMP: TIMESTAMP
+  * ZASSETCLASSPERCENTAGEDOMESTICBOND: DECIMAL
+  * ZASSETCLASSPERCENTAGEINTLBOND: DECIMAL
+  * ZASSETCLASSPERCENTAGEINTLSTOCK: DECIMAL
+  * ZASSETCLASSPERCENTAGELARGESTOCK: DECIMAL
+  * ZASSETCLASSPERCENTAGEMONEYMRKT: DECIMAL
+  * ZASSETCLASSPERCENTAGEOTHER: DECIMAL
+  * ZASSETCLASSPERCENTAGESMALLSTOCK: DECIMAL
+  * ZCOUPONRATE: DECIMAL
+  * ZMARKETVALUE: DECIMAL
+  * ZSECURITYUNITPRICE: DECIMAL
+  * ZSHARESPERCONTRACT: DECIMAL
+  * ZSTRIKEPRICE: DECIMAL
+  * ZUNITPRICE: DECIMAL
+  * ZUNITS: DECIMAL
+  * ZASSETCLASS: VARCHAR
+  * ZDATASOURCE: VARCHAR
+  * ZGUID: VARCHAR
+  * ZISSUETYPE: VARCHAR
+  * ZMEMO: VARCHAR
+  * ZOPTIONTYPE: VARCHAR
+  * ZPOSTYPE: VARCHAR
+  * ZSECURITYMEMO: VARCHAR
+  * ZSECURITYNAME: VARCHAR
+  * ZSECURITYTICKER: VARCHAR
+  * ZSECURITYTYPEDESCRIPTION: VARCHAR
+  * ZSYNCID: VARCHAR
+  * ZUNIQUEID: VARCHAR
+  * ZUNIQUEIDTYPE: VARCHAR
+}
+
+ZACCOUNT ||- -o{ ZPOSITION
+ZPOSITION ||- -|{ ZLOT
+ZLOT ||- -o{ ZLOTMOD
+
+@enduml
+
+@startuml Desired ERM
+
+entity "ZACCOUNT" {
+  * Z_PK: INTEGER
+  * Z_ENT: INTEGER
+  * Z_OPT: INTEGER
+  * ZACTIVE: INTEGER
+  * ZCANDIDATENOCASHTRANSACTIONS: INTEGER
+  * ZCANDIDATESINGLEMUTUALFUND: INTEGER
+  * ZCLOSED: INTEGER
+  * ZCONFIRMATIONNEEDED: INTEGER
+  * ZCOSTBASISALGORITHMDEBT: INTEGER
+  * ZCOSTBASISALGORITHMMUTUALFUND: INTEGER
+  * ZCOSTBASISALGORITHMOPTION: INTEGER
+  * ZCOSTBASISALGORITHMOTHER: INTEGER
+  * ZCOSTBASISALGORITHMSTOCK: INTEGER
+  * ZDELETIONCOUNT: INTEGER
+  * ZIMPORTQID: INTEGER
+  * ZLASTCHECKNUM: INTEGER
+  * ZLIQUIDITY: INTEGER
+  * ZLOANCOMPOUNDINGPERIOD: INTEGER
+  * ZLOANHASBEENSETUP: INTEGER
+  * ZLOANHASOFFEREDTOCONVERTLIABILITY: INTEGER
+  * ZLOANPAYMENTFREQUENCY: INTEGER
+  * ZLOANPAYMENTPERIOD: INTEGER
+  * ZLOANRATETYPE: INTEGER
+  * ZLOANTERMTYPE: INTEGER
+  * ZLOANUSEMATURITYDATE: INTEGER
+  * ZMOSTRECENTDOWNLOADSESSIONNUMBER: INTEGER
+  * ZNOCASHTRANSACTIONS: INTEGER
+  * ZOFXPAYMENTSENABLED: INTEGER
+  * ZOFXTRANSFERDESTENABLED: INTEGER
+  * ZOFXTRANSFERSOURCEENABLED: INTEGER
+  * ZONLINEBANKINGACCOUNTINFOSESSIONNEEDED: INTEGER
+  * ZONLINEBANKINGACCOUNTISENABLED: INTEGER
+  * ZONLINEBANKINGACCOUNTISINBIDCHANGE: INTEGER
+  * ZONLINEBANKINGAWAITINGINITIALDOWNLOAD: INTEGER
+  * ZONLINEBANKINGCHANGEPINFIRSTCOMPLETED: INTEGER
+  * ZQUICKENID: INTEGER
+  * ZSCHEDULELOOKAHEADVALUE: INTEGER
+  * ZSIMPLEINVESTING: INTEGER
+  * ZSINGLEMUTUALFUND: INTEGER
+  * ZSTATUSNUMATTEMPTS: INTEGER
+  * ZSTATUSTRANSACTIONCOUNT: INTEGER
+  * ZSYNCRESETREQUIRED: INTEGER
+  * ZSYNCWITHCLOUD: INTEGER
+  * ZTAXABLE: INTEGER
+  * ZUSEDINAUTOUPDATES: INTEGER
+  * ZUSEDINREPORTS: INTEGER
+  * ZBILLPAYPAYMENTACCOUNT: INTEGER
+  * ZBILLPAYPROVIDERINSTITUTION: INTEGER
+  * ZCLOUDFILOGIN: INTEGER
+  * ZERROR: INTEGER
+  * ZFINANCIALINSTITUTION: INTEGER
+  * ZLOANINTERESTCATEGORY: INTEGER
+  * ZLOANSMARTTRANSACTION: INTEGER
+  * ZCLOSEDDATE: TIMESTAMP
+  * ZCREATIONTIMESTAMP: TIMESTAMP
+  * ZLOANFIRSTPAYMENTDATE: TIMESTAMP
+  * ZLOANNEXTPAYMENTDATE: TIMESTAMP
+  * ZMODIFICATIONTIMESTAMP: TIMESTAMP
+  * ZONLINEBANKINGLASTCONNECTEDTIMESTAMP: TIMESTAMP
+  * ZONLINEBANKINGLEDGERBALANCEDATE: TIMESTAMP
+  * ZREVIEWEDTIMESTAMP: TIMESTAMP
+  * ZCREDITLIMIT: DECIMAL
+  * ZINTERESTRATE: DECIMAL
+  * ZLOANOPENINGBALANCE: DECIMAL
+  * ZLOANTERM: DECIMAL
+  * ZONLINEBANKINGLEDGERBALANCEAMOUNT: DECIMAL
+  * ZBANKROUTINGNUMBER: VARCHAR
+  * ZBILLPAYROUTINGNUMBER: VARCHAR
+  * ZCHECKPRINTINGPROPERTIESJSON: VARCHAR
+  * ZCURRENCY: VARCHAR
+  * ZDATASOURCE: VARCHAR
+  * ZFILTERSJSON: VARCHAR
+  * ZGUID: VARCHAR
+  * ZIMPORTSOURCEFILEID: VARCHAR
+  * ZIMPORTSOURCEID: VARCHAR
+  * ZNAME: VARCHAR
+  * ZNOTES: VARCHAR
+  * ZNOTIFICATIONSJSON: VARCHAR
+  * ZOFXBILLPAYSERVICESTATUS: VARCHAR
+  * ZOFXLASTBANKMAILTOKEN: VARCHAR
+  * ZOFXLASTPAYMENTTOKEN: VARCHAR
+  * ZOFXLASTTRANSFERTOKEN: VARCHAR
+  * ZONLINEBANKINGACCOUNTNUMBER: VARCHAR
+  * ZONLINEBANKINGAGGREGATORACCOUNTID: VARCHAR
+  * ZONLINEBANKINGCONNECTIONTYPE: VARCHAR
+  * ZONLINEBANKINGCUSTOMERID: VARCHAR
+  * ZONLINEBANKINGDTEND: VARCHAR
+  * ZONLINEBANKINGLASTTOKEN: VARCHAR
+  * ZONLINEBANKINGLASTUUID: VARCHAR
+  * ZONLINEBANKINGOFXACCOUNTTYPE: VARCHAR
+  * ZONLINEBANKINGPREVIOUSBID: VARCHAR
+  * ZONLINEBANKINGSERVERID: VARCHAR
+  * ZONLINEBILLPAYACCOUNTNUMBER: VARCHAR
+  * ZONLINEBILLPAYCONNECTIONTYPE: VARCHAR
+  * ZONLINEBILLPAYCUSTOMERID: VARCHAR
+  * ZONLINEBILLPAYOFXACCOUNTTYPE: VARCHAR
+  * ZRECONCILEINFOJSON: VARCHAR
+  * ZREGIONCODE: VARCHAR
+  * ZSCHEDULELOOKAHEADUNITTYPE: VARCHAR
+  * ZSYNCID: VARCHAR
+  * ZTYPENAME: VARCHAR
+  * ZUSERDESCRIPTION: VARCHAR
+  * ZCHECKPRINTINGPROPERTIES: BLOB
+  * ZFILTERS: BLOB
+  * ZNOTIFICATIONS: BLOB
+  * ZRECONCILEINFO: BLOB
+  * ZANOMALOUSSYNCSTATUS: BLOB
+  * ZONLINEBANKINGACCOUNTNUMBERMASKED: VARCHAR
+  * ZONLINEBANKINGAGGREGATIONPENDINGENABLEMENTINFO: BLOB
+  * ZONLINEBANKINGAGGREGATIONENABLEMENTCOUNT: INTEGER
+  * ZONLINEBANKINGAGGREGATIONDISABLEMENTCOUNT: INTEGER
+  * ZONLINEBANKINGACCOUNTDESCRIPTION: VARCHAR
+  * ZAUTORECONCILE: INTEGER
+  * ZQ17SYNCID: VARCHAR
+  }
+
+entity "ZLOT" {
+  * Z_PK: INTEGER PRIMARY KEY, 
+  * Z_ENT: INTEGER, 
+  * Z_OPT: INTEGER, 
+  * ZDELETIONCOUNT: INTEGER, 
+  * ZQUICKENID: INTEGER, 
+  * ZPOSITION: INTEGER, 
+  * ZACQUISITIONDATE: TIMESTAMP, 
+  * ZCREATIONTIMESTAMP: TIMESTAMP, 
+  * ZINITIALTRANSACTIONDATE: TIMESTAMP, 
+  * ZLATESTTRANSACTIONDATE: TIMESTAMP, 
+  * ZMODIFICATIONTIMESTAMP: TIMESTAMP, 
+  * ZINITIALCOSTBASIS: DECIMAL, 
+  * ZINITIALUNITS: DECIMAL, 
+  * ZLATESTCOSTBASIS: DECIMAL, 
+  * ZLATESTUNITS: DECIMAL, 
+  * ZDATASOURCE: VARCHAR, 
+  * ZGUID: VARCHAR, 
+  * ZSYNCID: VARCHAR
+}
+
+entity "ZLOTMOD" {
+  * Z_PK: INTEGER
+  * Z_ENT: INTEGER  
+  * Z_OPT: INTEGER  
+  * ZDELETIONCOUNT: INTEGER  
+  * ZQUICKENID: INTEGER  
+  * ZTERMTYPE: INTEGER  
+  * ZTRANSACTIONQUICKENID: INTEGER  
+  * ZLOT: INTEGER  
+  * ZLOTASSIGNMENT: INTEGER  
+  * ZTRANSACTION: INTEGER  
+  * ZCREATIONTIMESTAMP: TIMESTAMP  
+  * ZMODIFICATIONTIMESTAMP: TIMESTAMP  
+  * ZTRANSACTIONDATE: TIMESTAMP  
+  * ZAFTERCOSTBASIS: DECIMAL  
+  * ZAFTERPOSITIONCOSTBASIS: DECIMAL  
+  * ZAFTERPOSITIONUNITSDECIMAL  
+  * ZAFTERUNITS: DECIMAL  
+  * ZBEFORECOSTBASIS: DECIMAL  
+  * ZBEFOREUNITS: DECIMAL  
+  * ZDATASOURCE: VARCHAR  
+  * ZGUID: VARCHAR
+  * ZSYNCID: VARCHAR
+}
+
+entity "ZPOSITION" {
+  * Z_PK: INTEGER  
+  * Z_ENT: INTEGER  
+  * Z_OPT: INTEGER  
+  * ZCOSTBASISALGORITHM: INTEGER  
+  * ZDELETIONCOUNT: INTEGER  
+  * ZQUICKENID: INTEGER  
+  * ZTYPE: INTEGER  
+  * ZACCOUNT: INTEGER  
+  * ZSECURITY: INTEGER  
+  * ZCREATIONTIMESTAMP: TIMESTAMP  
+  * ZMODIFICATIONTIMESTAMP: TIMESTAMP  
+  * ZDATASOURCE: VARCHAR  
+  * ZGUID: VARCHAR  
+  * ZSYNCID: VARCHAR  
+  * ZUNIQUEID: VARCHAR  
+  * ZUNIQUEIDTYPE: VARCHAR  
+}
+
+entity "ZTRANSACTION" {
+  * Z_PK: INTEGER <<generated>>
+  * Z_ENT: INTEGER
+  * Z_OPT: INTEGER
+  * ZDELETIONCOUNT: INTEGER
+  * ZEXCLUDEFROMREPORTS: INTEGER
+  * ZIGNORETHISCASHTRANSACTION: INTEGER
+  * ZIMPORTQID: INTEGER
+  * ZLOCKED: INTEGER
+  * ZMATCHED: INTEGER
+  * ZONLINEID: INTEGER
+  * ZORDERID: INTEGER
+  * ZQUICKENID: INTEGER
+  * ZRECONCILESTATUS: INTEGER
+  * ZTYPE: INTEGER
+  * ZUSERSTATUSOVERRIDE: INTEGER
+  * **ZACCOUNT: INTEGER**
+  * ZDOWNLOADSESSION: INTEGER
+  * ZERROR: INTEGER
+  * ZFITRANSACTION: INTEGER
+  * ZPLACEHOLDERACCOUNT: INTEGER
+  * ZRECONCILEDTRANSACTION: INTEGER
+  * ZRENAMINGRULEUSED: INTEGER
+  * ZSENDACCOUNT: INTEGER
+  * ZTARGETACCOUNT: INTEGER
+  * ZFLAG: INTEGER
+  * ZMACHINEGENERATEDCATEGORYSOURCE: INTEGER
+  * ZMACHINEGENERATEDPAYEESOURCE: INTEGER
+  * ZMACHINEGENERATEDTAGSOURCE: INTEGER
+  * ZMISCFLAGS: INTEGER
+  * ZSENDREQUESTSTATE: INTEGER
+  * ZSOURCESMARTCASHFLOWTRANSACTIONQUICKENID: INTEGER
+  * ZACTION: INTEGER
+  * ZCHECKPAYCHECK: INTEGER
+  * ZQUICKPAYPAYMENT: INTEGER
+  * ZUSERPAYEE: INTEGER
+  * ZAUTOPOST: INTEGER
+  * ZTOBESENT: INTEGER
+  * ZLOANACCOUNT: INTEGER
+  * ZCOSTBASISALGORITHM: INTEGER
+  * ZTAXEXEMPT: INTEGER
+  * **ZPOSITION: INTEGER <<FK>>**
+  * ZCREATIONTIMESTAMP: TIMESTAMP
+  * ZENTEREDDATE: TIMESTAMP
+  * ZMODIFICATIONTIMESTAMP: TIMESTAMP
+  * ZPLACEHOLDERTARGETDATE: TIMESTAMP
+  * ZPOSTEDDATE: TIMESTAMP
+  * ZBUDGETFLEXIBILITY: FLOAT
+  * ZSENTTRANSACTIONSTATUSDATE: TIMESTAMP
+  * ZSOURCESMARTCASHFLOWTRANSACTIONORIGINALMODELDATE: TIMESTAMP
+  * ZACQUISITIONDATE: TIMESTAMP
+  * **ZAMOUNT: DECIMAL**
+  * ZPLACEHOLDERTARGETBALANCE: DECIMAL
+  * ZCOMMISSION: DECIMAL
+  * ZCOSTBASIS: DECIMAL
+  * ZDENOMINATOR: DECIMAL
+  * ZNUMERATOR: DECIMAL
+  * ZPLACEHOLDERCOSTBASIS: DECIMAL
+  * ZPLACEHOLDERCOSTBASISUNITS: DECIMAL
+  * ZPLACEHOLDERTARGETUNITS: DECIMAL
+  * ZPLACEHOLDERUNITSONTARGETDATE: DECIMAL
+  * ZUNITS: DECIMAL
+  * ZDATASOURCE: VARCHAR
+  * ZFINOTE: VARCHAR
+  * ZGUID: VARCHAR
+  * ZIMPORTSOURCEFILEID: VARCHAR
+  * ZIMPORTSOURCEID: VARCHAR
+  * ZMATCHSOURCE: VARCHAR
+  * ZNOTE: VARCHAR
+  * ZONLINEBANKINGSERVERID: VARCHAR
+  * ZPREMATCHPROPERTIESJSON: VARCHAR
+  * ZREFERENCE: VARCHAR
+  * ZSYNCID: VARCHAR
+  * ZCHECKNUMBER: VARCHAR
+  * ZCHECKPROPERTIESJSON: VARCHAR
+  * ZCLIENTASSIGNEDTRANSACTIONUID: VARCHAR
+  * ZOFXPAYEELISTID: VARCHAR
+  * ZRECURRENCEJSON: VARCHAR
+  * ZLOCATION: BLOB
+  * ZPREMATCHPROPERTIES: BLOB
+  * ZCHECKPROPERTIES: BLOB
+  * ZRECURRENCEEND: BLOB
+}
+
+entity "ZFIPOSITION" {
+  * Z_PK: INTEGER
+  * Z_ENT: INTEGER
+  * Z_OPT: INTEGER
+  * ZDELETIONCOUNT: INTEGER
+  * ZQUICKENID: INTEGER
+  * ZSECURITYTYPE: INTEGER
+  * ZFISTATEMENT: INTEGER
+  * ZCOUPONMATURITYDATE: TIMESTAMP
+  * ZCREATIONTIMESTAMP: TIMESTAMP
+  * ZDEBTMATURITYDATE: TIMESTAMP
+  * ZEXPIREDATE: TIMESTAMP
+  * ZMODIFICATIONTIMESTAMP: TIMESTAMP
+  * ZASSETCLASSPERCENTAGEDOMESTICBOND: DECIMAL
+  * ZASSETCLASSPERCENTAGEINTLBOND: DECIMAL
+  * ZASSETCLASSPERCENTAGEINTLSTOCK: DECIMAL
+  * ZASSETCLASSPERCENTAGELARGESTOCK: DECIMAL
+  * ZASSETCLASSPERCENTAGEMONEYMRKT: DECIMAL
+  * ZASSETCLASSPERCENTAGEOTHER: DECIMAL
+  * ZASSETCLASSPERCENTAGESMALLSTOCK: DECIMAL
+  * ZCOUPONRATE: DECIMAL
+  * ZMARKETVALUE: DECIMAL
+  * ZSECURITYUNITPRICE: DECIMAL
+  * ZSHARESPERCONTRACT: DECIMAL
+  * ZSTRIKEPRICE: DECIMAL
+  * ZUNITPRICE: DECIMAL
+  * ZUNITS: DECIMAL
+  * ZASSETCLASS: VARCHAR
+  * ZDATASOURCE: VARCHAR
+  * ZGUID: VARCHAR
+  * ZISSUETYPE: VARCHAR
+  * ZMEMO: VARCHAR
+  * ZOPTIONTYPE: VARCHAR
+  * ZPOSTYPE: VARCHAR
+  * ZSECURITYMEMO: VARCHAR
+  * ZSECURITYNAME: VARCHAR
+  * ZSECURITYTICKER: VARCHAR
+  * ZSECURITYTYPEDESCRIPTION: VARCHAR
+  * ZSYNCID: VARCHAR
+  * ZUNIQUEID: VARCHAR
+  * ZUNIQUEIDTYPE: VARCHAR
+}
+
+ZACCOUNT ||- -o{ ZPOSITION
+ZPOSITION ||- -|{ ZLOT
+ZLOT ||- -o{ ZLOTMOD
+
+@enduml
+
+PlantUML version 1.2022.2(Sat Mar 05 16:30:19 GMT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>

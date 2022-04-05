@@ -30,13 +30,13 @@ interface InvestmentAccountFromQuicken {
  * corresponding ZFINANCIALINSTITUTIONEntity) from Quicken's data.
  */
 export default class InvestmentAccountMapped extends BaseMapped<QuickenAccountData> implements InvestmentAccountFromQuicken {
-  name: string = ""
+  name = ""
   public currency = CurrencyCode.USD
   type = InvestmentAccountOption.BROKERAGE
   closedDate!: Date | null
   readonly quickenData
-  institutionName: string = ""
-  institutionURL: string = ""
+  institutionName = ""
+  institutionURL = ""
 
   constructor(quickenData: QuickenAccountData) {
     super(quickenData)

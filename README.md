@@ -1,3 +1,7 @@
+# Project Status
+
+Development has stopped for now due to the complexities and unknown database relationships. See the Quicken Investment Parser project.
+
 # Table Descriptions
 
 ## ZFIPOSITION

@@ -14,8 +14,8 @@ interface SecurityFromQuicken {
 }
 
 export default class SecurityMapped extends BaseMapped<QuickenSecurityData> implements SecurityFromQuicken {
-  name: string = ""
-  ticker: string = ""
+  name = ""
+  ticker = ""
   issueType: unknown
   assetClass: unknown
   readonly quickenData

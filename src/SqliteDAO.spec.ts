@@ -26,7 +26,7 @@ describe("Sqlite DAO", () => {
         )`,
       ).run()
       db.prepare(
-        `INSERT INTO account (name, balance, institutionId) VALUES ('Checking', 1004, 1), ('Joint Brokerage', 10500, 2)`,
+        "INSERT INTO account (name, balance, institutionId) VALUES ('Checking', 1004, 1), ('Joint Brokerage', 10500, 2)",
       ).run()
       await SqliteDAO.injectDB(db)
     } catch (error) {
@@ -51,7 +51,7 @@ describe("Sqlite DAO", () => {
   describe("getByStatementAndParameters", () => {
     it("retrieves all rows from specified table with select value from lookup", () => {
       const rqstParams: SqliteDAOGetParams = {
-        stmt: `SELECT * FROM "account" LEFT JOIN "institution" ON "account"."institutionId" = "institution"."id" WHERE "account"."name" IN (@val0, @val1)`,
+        stmt: "SELECT * FROM \"account\" LEFT JOIN \"institution\" ON \"account\".\"institutionId\" = \"institution\".\"id\" WHERE \"account\".\"name\" IN (@val0, @val1)",
         parameterVals: {
           val0: "Checking",
           val1: "Savings"
